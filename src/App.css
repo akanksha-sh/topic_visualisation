@@ -1,0 +1,17 @@
+
+
+circle {
+    fill: rgb(187, 101, 98);
+    fill-opacity: .25;
+    stroke: rgb(187, 101, 98);
+    stroke-width: 1px;
+  }
+  
+  .leaf circle {
+    fill: #ff0e42;
+    fill-opacity: 1;
+  }
+
+  .App {
+      background-color: white;
+}

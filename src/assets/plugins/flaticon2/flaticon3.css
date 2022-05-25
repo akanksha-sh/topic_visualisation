@@ -1,0 +1,65 @@
+/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 06/06/2020 22:30
+  	*/
+
+@font-face {
+  font-family: 'Flaticon3';
+  src: url('./font/Flaticon3.eot');
+  src: url('./font/Flaticon3.eot?#iefix') format('embedded-opentype'),
+    url('./font/Flaticon3.woff') format('woff'),
+    url('./font/Flaticon3.ttf') format('truetype'),
+    url('./font/Flaticon3.svg#Flaticon3') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: 'Flaticon3';
+    src: url('./font/Flaticon3.svg#Flaticon3') format('svg');
+  }
+}
+
+[class^='flaticon3-']:before,
+[class*=' flaticon3-']:before,
+[class^='flaticon3-']:after,
+[class*=' flaticon3-']:after {
+  font-family: Flaticon;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon3-shuffle-1:before {
+  content: '\f100';
+}
+.flaticon3-shuffle:before {
+  content: '\f101';
+}
+.flaticon3-dashboard:before {
+  content: '\f102';
+}
+.flaticon3-dashboard-1:before {
+  content: '\f103';
+}
+.flaticon3-list:before {
+  content: '\f104';
+}
+.flaticon3-list-1:before {
+  content: '\f105';
+}
+.flaticon3-settings:before {
+  content: '\f106';
+}
+.flaticon3-megaphone:before {
+  content: '\f107';
+}

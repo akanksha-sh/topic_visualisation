@@ -1,0 +1,249 @@
+Year,Category,id,url,title,sentiment
+2020,Business,11,https://www.bloomberg.com/news/articles/2020-09-10/singapore-airlines-plans-to-slash-a-quarter-of-workforce,Singapore Air Cuts 20% of Workforce as Virus Smashes Travel,Negative
+2020,Business,1,https://www.bloomberg.com/news/articles/2020-12-21/how-covid-ripped-apart-global-airlines-business,"2020 Is Year Airlines Would Rather Forget, as These Charts Show",Negative
+2020,Business,43,https://www.bloomberg.com/news/articles/2020-08-04/another-regional-u-s-airline-falls-to-the-covid-19-recession,Another Regional Airline Falls to the Covid-19 Recession,Negative
+2020,Business,36,https://www.bloomberg.com/news/articles/2020-07-17/global-air-passenger-slump-to-last-until-2023-moody-s-says,"Global Air Passenger Slump to Last Until 2023, Moody’s Says",Negative
+2020,Business,28,https://www.bloomberg.com/news/articles/2020-11-19/boeing-s-737-max-now-faces-its-ultimate-test-passenger-fear,Boeing 737 Max’s Ultimate Test May Be Fearful Passengers,Negative
+2020,Business,32,https://www.bloomberg.com/news/articles/2020-05-18/international-plane-travel-creeps-back-with-bubble-corridors,International Airline Travel Creeps Back With ‘Bubble’ Corridors,Positive
+2020,Business,39,https://www.bloomberg.com/news/articles/2020-08-20/singapore-air-burns-through-half-of-cash-raised-in-two-months,Singapore Air Goes Through Half of Cash Raised in Two Months,Negative
+2020,Business,27,https://www.bloomberg.com/news/articles/2020-06-12/faa-warns-of-tail-strikes-off-course-flying-by-near-empty-jets,"FAA Warns of Tail Strikes, Off-Course Flying by Near-Empty Jets",Negative
+2020,Business,44,https://www.bloomberg.com/news/articles/2020-07-23/400-000-jobs-lost-at-airlines-during-coronavirus-pandemic,"Jobs Are Being Wiped Out at Airlines, And There’s Worse to Come",Negative
+2020,Business,30,https://www.bloomberg.com/news/articles/2020-08-12/cathay-warns-biggest-crisis-to-persist-after-1-3-billion-loss,Cathay Rises Most Since 2008 as Reopening Chance Offsets Virus,Positive
+2020,Business,9,https://www.bloomberg.com/news/articles/2020-06-14/germany-s-condor-airline-to-cut-up-to-1-000-jobs-ceo-tells-fas,"Germany’s Condor Airline to Cut Up to 1,000 Jobs, CEO Says",Negative
+2020,Business,12,https://www.bloomberg.com/news/articles/2020-06-09/emirates-kicks-off-thousands-of-job-cuts-to-navigate-virus-slump,Emirates Starts Cutting Thousands of Jobs,Negative
+2020,Business,3,https://www.bloomberg.com/news/articles/2020-06-23/discount-airline-group-presses-for-extension-of-u-s-assistance,Discount Airline Group Presses for Extension of U.S. Assistance,Negative
+2020,Business,41,https://www.bloomberg.com/news/articles/2020-09-01/aviation-job-losses-could-approach-a-half-million-by-year-s-end,Aviation Job Losses Could Approach a Half-Million by Year’s End,Negative
+2020,Business,24,https://www.bloomberg.com/news/articles/2020-08-12/southwest-ceo-sees-airline-posting-first-annual-loss-since-1972,Southwest CEO Sees Airline Posting First Annual Loss Since 1972,Negative
+2020,Business,16,https://www.bloomberg.com/news/articles/2020-05-29/germany-and-eu-said-to-reach-deal-over-lufthansa-bailout,Germany Reaches EU Deal on $9.9 Billion Lufthansa Bailout,Positive
+2020,Business,19,https://www.bloomberg.com/news/articles/2020-07-15/extension-of-airline-payroll-aid-sought-by-unions-lawmakers,"Extension of Airline Payroll Aid Sought by Unions, Lawmakers",Negative
+2020,Business,18,https://www.bloomberg.com/news/articles/2020-08-30/united-air-drops-fees-american-air-whacks-schedule-in-covid-era,"United Air Drops Fees, American Air Whacks Schedule in Covid Era",Negative
+2020,Business,2,https://www.bloomberg.com/news/articles/2020-10-31/lufthansa-can-emerge-stronger-from-pandemic-ceo-spohr-says,"Lufthansa Can Emerge Stronger From Pandemic, CEO Spohr Says",Positive
+2020,Business,26,https://www.bloomberg.com/news/articles/2020-12-20/travel-pain-spreads-as-europe-closes-ranks-on-u-k-virus-strain,Travel Pain Spreads as Europe Blocks U.K. Flights on Virus Fears,Negative
+2020,Business,38,https://www.bloomberg.com/news/articles/2020-10-26/ana-to-unveil-restructuring-plan-as-losses-mount-due-to-virus,Japan’s ANA to Unveil Restructuring Plan as Losses Mount,Negative
+2020,Business,0,https://www.bloomberg.com/news/articles/2020-06-06/british-airways-threatens-to-fire-all-pilots-in-latest-salvo,"British Airways Threatens to Fire Pilots, Fights U.K.’s Quarantine Rule",Negative
+2020,Business,35,https://www.bloomberg.com/news/articles/2020-07-20/u-s-airlines-face-the-end-of-business-travel-as-they-knew-it,U.S. Airlines Face End of Business Travel as They Knew It,Negative
+2020,Business,10,https://www.bloomberg.com/news/articles/2020-08-27/united-sees-2-850-pilot-layoffs-without-new-aid-echoing-rivals,"United Sees 2,850 Pilot Layoffs Without New Aid, Echoing Rivals",Negative
+2020,Business,33,https://www.bloomberg.com/news/articles/2020-07-02/american-air-says-it-will-have-20-000-more-employees-than-needed,"American Air Says It Will Have 20,000 More Employees Than Needed",Negative
+2020,Business,37,https://www.bloomberg.com/news/articles/2020-10-07/u-k-mulls-covid-tests-for-arrivals-in-bid-to-restart-air-travel,U.K. Mulls Traveler Tests in Bid to Restart Air Travel,Negative
+2020,Business,13,https://www.bloomberg.com/news/articles/2020-11-18/boeing-max-cleared-to-fly-as-faa-lifts-longest-u-s-grounding,Boeing Max Is Cleared to Fly as FAA Lifts Longest U.S. Grounding,Positive
+2020,Business,23,https://www.bloomberg.com/news/articles/2020-06-04/american-air-to-boost-flying-74-on-surprise-demand-rebound,American Air’s 74% Jump in Flying Signals Travel on the Mend,Positive
+2020,Business,29,https://www.bloomberg.com/news/articles/2020-10-19/u-s-air-passengers-exceed-1-million-for-first-time-since-march,"U.S. Air Passengers Exceed 1 Million, First Time Since March",Positive
+2020,Business,34,https://www.bloomberg.com/news/articles/2020-07-28/airlines-see-prolonged-wait-for-pre-covid-traffic-levels-return,Airlines See Long Wait for Return to Pre-Covid Traffic Levels,Negative
+2020,Business,8,https://www.bloomberg.com/news/articles/2020-06-16/airasia-eyes-durian-flights-as-part-of-farm-to-table-food-push,AirAsia Eyes Durian Flights as Part of Farm-to-Table Food Push,Negative
+2020,Business,7,https://www.bloomberg.com/news/articles/2020-05-26/bailout-or-bust-dilemma-forces-lufthansa-to-call-in-state-rescue,Bailout-or-Bust Dilemma Forces Lufthansa to Call in State Rescue,Negative
+2020,Business,21,https://www.bloomberg.com/news/articles/2020-08-19/qantas-sees-more-pain-ahead-after-first-loss-in-six-years,Qantas Reports $1.96 Billion Loss and Sees More Pain to Come,Negative
+2020,Business,31,https://www.bloomberg.com/news/articles/2020-05-28/american-airlines-to-cut-30-of-management-and-support-staff,"American Air to Cut Management, Staff 30% Amid Travel Slump",Negative
+2020,Business,14,https://www.bloomberg.com/news/articles/2020-05-20/emirates-seeks-to-scrap-last-5-a380-orders-in-final-blow-to-jet,Emirates Seeks to Scrap Last Five A380 Orders in Final Blow to Jet,Negative
+2020,Business,40,https://www.bloomberg.com/news/articles/2020-06-12/inside-the-5-billion-apollo-deal-to-salvage-cathay-pacific,Inside the $5 Billion ‘Apollo’ Deal to Salvage Cathay Pacific,Positive
+2020,Business,15,https://www.bloomberg.com/news/articles/2020-09-04/iata-top-doctor-says-airlines-can-t-afford-to-wait-for-vaccine,IATA Top Doctor Says Airlines Can’t Afford to Wait for Vaccine,Negative
+2020,Business,25,https://www.bloomberg.com/news/articles/2020-07-30/let-us-fly-or-bail-us-out-airlines-say-in-fight-with-trudeau,"Let Us Fly or Bail Us Out, Airlines Say in Fight With Trudeau",Negative
+2020,Business,4,https://www.bloomberg.com/news/articles/2020-10-19/iata-working-with-who-and-civil-aviation-body-on-testing-regime,Airlines Working With WHO on Testing to Replace Quarantine,Positive
+2020,Business,5,https://www.bloomberg.com/news/articles/2020-06-10/garuda-wins-approval-for-debt-extension-easing-cash-crunch,"Garuda Wins Approval for Debt Extension, Easing Cash Crunch",Positive
+2020,Business,22,https://www.bloomberg.com/news/articles/2020-06-19/aeromexico-weighs-u-s-bankruptcy-filing-amid-travel-collapse,Aeromexico Mulls U.S. Bankruptcy Filing Amid Travel Collapse,Negative
+2020,Business,6,https://www.bloomberg.com/news/articles/2020-06-27/ryanair-calls-u-k-s-air-bridge-plan-more-idiotic-rubbish,Ryanair Calls U.K.’s Air Bridge Plan ‘More Idiotic Rubbish’,Negative
+2020,Business,17,https://www.bloomberg.com/news/articles/2020-10-10/air-canada-slashes-price-of-transat-deal-citing-covid-impact,"Air Canada Slashes Price of Transat Deal, Citing Covid Impact",Negative
+2020,Business,42,https://www.bloomberg.com/news/articles/2020-05-29/turkish-airlines-rides-tailwinds-for-peer-beating-stock-recovery,Turkish Airlines Rides Tailwinds for Peer-Beating Stock Recovery,Positive
+2020,Business,20,https://www.bloomberg.com/news/articles/2020-10-27/ana-sees-biggest-ever-loss-as-pandemic-guts-global-travel,Japanese Airline ANA Forecasts Its Biggest Ever Loss,Negative
+2021,Business,18,https://www.bloomberg.com/news/articles/2021-06-15/emirates-posts-first-loss-in-three-decades-as-virus-slams-travel,Emirates Gets Government Aid After Pandemic Leads to Huge Loss,Negative
+2021,Business,88,https://www.bloomberg.com/news/articles/2021-02-18/airbus-cautious-on-2021-after-cementing-cash-flow-turnaround,Airbus Cautious on 2021 After Cementing Cash Flow Turnaround,Negative
+2021,Business,13,https://www.bloomberg.com/news/articles/2021-02-26/british-airways-parents-posts-9-billion-loss-offers-no-outlook,British Airways Parent Sees Some Hope After $9 Billion Loss,Positive
+2021,Business,79,https://www.bloomberg.com/news/articles/2021-04-15/delta-sticks-with-profit-outlook-as-travel-rebound-advances,Delta’s Steady Outlook Underwhelms as Cost Pressures Loom,Negative
+2021,Business,1,https://www.bloomberg.com/news/articles/2021-06-03/indian-airlines-will-lose-8-billion-due-to-covid-capa-says,"Indian Airlines Will Lose $8 Billion Due to Covid, CAPA Says",Negative
+2021,Business,89,https://www.bloomberg.com/news/articles/2021-01-12/sas-loses-ceo-at-critical-time-as-airlines-continue-to-suffer,SAS Chief Unexpectedly Bolts at ‘Critical’ Time for Airline,Positive
+2021,Business,125,https://www.bloomberg.com/news/articles/2021-05-27/mexico-boosts-air-safety-budget-40-after-cuts-hurt-u-s-rating,FAA Rebuke Spurs Mexico to Add Back Air Safety Inspectors,Negative
+2021,Business,47,https://www.bloomberg.com/news/articles/2021-07-10/business-trips-are-coming-back-faster-than-expected-in-the-u-s,Business Trips Are Coming Back Faster Than Expected in the U.S.,Positive
+2021,Business,82,https://www.bloomberg.com/news/articles/2021-06-10/australia-singapore-working-toward-setting-up-travel-corridor,Singapore-Australia Travel Corridor May Take Months to Open,Negative
+2021,Business,65,https://www.bloomberg.com/news/articles/2021-04-28/covid-outbreak-grips-canada-oil-sands-just-as-roughnecks-fly-in,Covid Outbreak Grips Canada Oil Sands Just as Roughnecks Fly In,Positive
+2021,Business,66,https://www.bloomberg.com/news/articles/2021-07-08/buttigieg-says-no-firm-date-to-lift-international-traveler-bans,Buttigieg Says No Firm Date to Lift International Traveler Bans,Negative
+2021,Business,57,https://www.bloomberg.com/news/articles/2021-05-31/qantas-offers-unlimited-flights-in-biggest-vaccine-incentive,Qantas Offers Unlimited Flights in Biggest Vaccine Incentive,Positive
+2021,Business,2,https://www.bloomberg.com/news/articles/2021-06-03/delta-ceo-sees-u-s-business-travel-recovering-by-summer-2022,Delta CEO Sees U.S. Business Travel Recovery by Summer 2022,Positive
+2021,Business,31,https://www.bloomberg.com/news/articles/2021-05-27/where-can-you-fly-right-now-the-frantic-pitch-to-save-summer,Where Can You Fly Right Now? The Frantic Pitch to Save Summer,Positive
+2021,Business,90,https://www.bloomberg.com/news/articles/2021-06-12/u-s-air-travelers-top-2-million-for-first-time-since-pandemic,U.S. Air Travelers Top 2 Million for First Time in Pandemic,Positive
+2021,Business,103,https://www.bloomberg.com/news/articles/2021-06-20/american-airlines-flight-cancellations-set-to-continue-monday,American Airlines Flight Cancellations Set to Continue Monday,Negative
+2021,Business,63,https://www.bloomberg.com/news/articles/2021-07-16/where-can-you-fly-right-now-vaccine-driven-comeback-skips-the-u-k,Where Can You Fly Right Now? Vaccine-Driven Comeback Skips the U.K.,Negative
+2021,Business,5,https://www.bloomberg.com/news/articles/2021-06-07/airlines-seek-restart-of-u-s-u-k-flights-as-biden-visit-looms,Airlines Seek Trans-Atlantic Restart on Eve of Biden Trip,Negative
+2021,Business,101,https://www.bloomberg.com/news/articles/2021-05-29/lufthansa-has-permits-to-fly-to-moscow-and-st-petersburg,Lufthansa Has Permits to Fly to Moscow and St. Petersburg,Positive
+2021,Business,72,https://www.bloomberg.com/news/articles/2021-02-24/qantas-pushes-backs-expected-restart-of-international-travel,Qantas Pushes Back Expected Restart of International Travel,Negative
+2021,Business,42,https://www.bloomberg.com/news/articles/2021-06-23/southwest-s-kelly-to-step-down-as-ceo-jordan-named-successor,"Southwest Air’s Kelly to Exit as CEO, Jordan Named Successor",Negative
+2021,Business,9,https://www.bloomberg.com/news/articles/2021-06-07/lufthansa-in-talks-to-help-revive-sudan-s-carrier-minister-says,Lufthansa May Help Revive One of Africa’s Oldest Airlines,Positive
+2021,Business,70,https://www.bloomberg.com/news/articles/2021-03-13/brazil-outbreak-at-weekly-record-u-s-cases-slow-virus-update,U.S. Deaths Fall; AstraZeneca Says Vaccine Is Safe: Virus Update,Positive
+2021,Business,54,https://www.bloomberg.com/news/articles/2021-06-21/airlines-seek-federal-criminal-charges-against-unruly-passengers,Airlines Seeking Criminal Charges Against Unruly Passengers,Negative
+2021,Business,96,https://www.bloomberg.com/news/articles/2021-06-03/where-can-you-fly-right-now-covid-zero-brings-maximum-travel-pain,Where Can You Fly Right Now? ‘Covid Zero’ Brings Maximum Travel Pain,Negative
+2021,Business,49,https://www.bloomberg.com/news/articles/2021-07-02/fauci-doesn-t-expect-another-nationwide-case-spike-virus-update,Biden in Michigan; Delta Clouds Summer Plans: Virus Update,Positive
+2021,Business,99,https://www.bloomberg.com/news/articles/2021-06-02/who-backs-sinovac-vaccine-thailand-adds-stimulus-virus-update,Biden’s New Plan; Variants Dominate in Minnesota: Virus Update,Positive
+2021,Business,46,https://www.bloomberg.com/news/articles/2021-06-21/u-k-travel-chiefs-set-to-challenge-warning-of-fourth-lockdown,U.K. Travel Chiefs Set to Challenge Fourth Lockdown Warning,Positive
+2021,Business,124,https://www.bloomberg.com/news/articles/2021-06-07/qantas-seeks-details-on-disturbing-criminal-gang-report,Qantas Seeks Details on ‘Disturbing’ Criminal Gang Report,Negative
+2021,Business,32,https://www.bloomberg.com/news/articles/2021-05-29/u-s-airline-flyers-creep-up-toward-2-million-in-travel-rebound,U.S. Airline Flyers Creep Up Toward 2 Million in Travel Rebound,Positive
+2021,Business,97,https://www.bloomberg.com/news/articles/2021-05-25/new-icelandic-airline-plans-june-launch-after-two-year-hiatus,New Icelandic Airline Plans June Start After Two-Year Hiatus,Positive
+2021,Business,108,https://www.bloomberg.com/news/articles/2021-04-26/hong-kong-singapore-travel-bubble-to-start-on-may-26,Hong Kong and Singapore Set Date for Long-Awaited Travel Bubble,Positive
+2021,Business,115,https://www.bloomberg.com/news/articles/2021-06-04/airfares-hit-1-000-as-u-k-tourists-rush-to-leave-portugal,"Airfares Hit $1,000 as U.K. Tourists Rush to Leave Portugal",Negative
+2021,Business,107,https://www.bloomberg.com/news/articles/2021-03-24/ryanair-chief-touts-robust-summer-for-travel-despite-setbacks,Ryanair Chief Touts Robust Summer Outlook Despite Setbacks,Positive
+2021,Business,126,https://www.bloomberg.com/news/articles/2021-07-08/u-k-travel-restart-puts-border-control-upgrades-to-the-test,U.K. Travel Ramp Up Puts Border-Control Upgrades to the Test,Positive
+2021,Business,20,https://www.bloomberg.com/news/articles/2021-04-25/hong-kong-singapore-air-travel-bubble-said-to-start-on-may-26,Hong Kong-Singapore Air Travel Bubble to Start on May 26,Positive
+2021,Business,94,https://www.bloomberg.com/news/articles/2021-03-13/social-media-buzz-air-travel-record-bitcoin-boom-bachelorette,"Social Media Buzz: Air Travel Record, Bitcoin Boom, Bachelorette",Positive
+2021,Business,11,https://www.bloomberg.com/news/articles/2021-02-19/u-s-plans-to-add-6-000-screeners-for-post-covid-travel-rush,"TSA Plans to Add 6,000 Airport Screeners for Post-Covid Travel Rush",Negative
+2021,Business,22,https://www.bloomberg.com/news/articles/2021-02-23/easyjet-ticket-sales-surge-as-johnson-plan-boosts-summer-hopes,"Airline Bookings Surge, Buoyed by U.K. Plans to Reopen Travel",Positive
+2021,Business,81,https://www.bloomberg.com/news/articles/2021-06-08/boeing-jet-sales-surge-as-pandemic-retreats-in-u-s-europe,"Boeing Jet Sales Surge as Pandemic Retreats in U.S., Europe",Positive
+2021,Business,21,https://www.bloomberg.com/news/articles/2021-06-11/lufthansa-turns-to-747-jumbos-as-german-tourists-flood-mallorca,Lufthansa Turns to 747 Jumbos as German Tourists Flood Mallorca,Negative
+2021,Business,117,https://www.bloomberg.com/news/articles/2021-05-30/india-mulls-enhancing-41-billion-loan-guarantee-for-small-firms,India Extends $41 Billion Loan-Guarantee Offer to Airlines,Positive
+2021,Business,106,https://www.bloomberg.com/news/articles/2021-07-05/pandemic-pushes-millions-of-small-thai-businesses-into-crisis,Pandemic Pushes Millions of Small Thai Companies Into Crisis,Negative
+2021,Business,35,https://www.bloomberg.com/news/articles/2021-06-09/british-airways-ryanair-face-u-k-probe-over-denied-refunds,"British Airways, Ryanair Face U.K. Probe Over Denied Refunds",Negative
+2021,Business,114,https://www.bloomberg.com/news/articles/2021-06-01/singapore-airlines-says-reserves-sufficient-for-well-into-2023,Singapore Airlines Says Reserves Sufficient for Well Into 2023,Positive
+2021,Business,59,https://www.bloomberg.com/news/articles/2021-06-08/southwest-air-adds-to-boeing-max-7-order-as-u-s-travel-rebounds,"Southwest Extends Bet on Smallest Boeing Max, Speeds Fleet Redo",Negative
+2021,Business,109,https://www.bloomberg.com/news/articles/2021-06-10/transat-to-drop-hotel-unit-add-partnerships-in-revival-effort,Transat Hits Highest Since March as It Plans July 30 Restart,Positive
+2021,Business,71,https://www.bloomberg.com/news/articles/2021-05-25/boeing-max-gets-boost-with-add-on-order-from-lessor-smbc,Boeing Max Gets Boost With Add-On Order From Lessor SMBC,Positive
+2021,Business,104,https://www.bloomberg.com/news/articles/2021-04-28/where-can-you-fly-right-now-india-s-outbreak-stalls-global-travel-rebound,Where Can You Fly Right Now? India’s Outbreak Stalls Global Travel Rebound,Negative
+2021,Business,69,https://www.bloomberg.com/news/articles/2021-06-15/southwest-airlines-reels-with-1-000-flights-canceled-or-delayed,"Southwest Says Systems Restored After 1,400 Flights Disrupted",Negative
+2021,Business,50,https://www.bloomberg.com/news/articles/2021-06-30/indonesian-discount-carrier-lion-air-struggling-to-pay-for-jets,Indonesian Discounter Lion Air Struggles to Pay for Jets,Negative
+2021,Business,37,https://www.bloomberg.com/news/articles/2021-05-30/u-s-cities-to-power-revival-in-domestic-travel-tripadvisor-ceo,U.S. Cities to Power Revival in Domestic Travel: TripAdvisor CEO,Positive
+2021,Business,30,https://www.bloomberg.com/news/articles/2021-02-11/frosty-trudeau-empty-airports-await-incoming-air-canada-ceo,"Frosty Trudeau, Empty Airports Await Incoming Air Canada CEO",Negative
+2021,Business,3,https://www.bloomberg.com/news/articles/2021-07-11/united-ceo-sees-huge-desire-fueling-u-s-air-travel-rebound,United CEO Sees ‘Huge Desire’ Fueling U.S. Air Travel Rebound,Positive
+2021,Business,33,https://www.bloomberg.com/news/articles/2021-04-30/ana-sees-surprise-profit-outlook-even-as-planes-remain-grounded,Airline Gives Surprise Profit Outlook Even as Planes Remain Grounded,Positive
+2021,Business,85,https://www.bloomberg.com/news/articles/2021-07-04/sydney-airport-gets-17-billion-takeover-bid-in-bet-on-rebound,Sydney Airport Gets $17 Billion Offer in Bet on Travel Rebound,Positive
+2021,Business,55,https://www.bloomberg.com/news/articles/2021-07-09/castlelake-commits-2-1-billion-through-aviation-lending-program,Castlelake Commits $2.1 Billion Through Aviation Lending Program,Positive
+2021,Business,19,https://www.bloomberg.com/news/articles/2021-04-06/air-france-klm-gets-4-7-billion-rescue-france-to-raise-stake,Air France-KLM Gets $4.7 Billion State Aid in Survival Step,Negative
+2021,Business,28,https://www.bloomberg.com/news/articles/2021-06-06/covid-crisis-drives-indigo-to-worse-than-expected-loss,Covid Crisis Pushes IndiGo to Even Bigger Quarterly Loss,Negative
+2021,Business,120,https://www.bloomberg.com/news/articles/2021-07-10/turkish-airlines-raises-staff-wages-amid-aviation-recovery-hopes,Turkish Airlines Raises Staff Wages Amid Aviation Recovery Hopes,Positive
+2021,Business,80,https://www.bloomberg.com/news/articles/2021-07-13/american-sees-slight-second-quarter-profit-as-airlines-rebound,American Airlines Climbs as Travel Rebound Brightens Outlook,Positive
+2021,Business,6,https://www.bloomberg.com/news/articles/2021-04-12/trudeau-agrees-to-air-canada-aid-package-media-reports-say,Air Canada Drops as Rescue Plan Sees Government Take Equity,Negative
+2021,Business,121,https://www.bloomberg.com/news/articles/2021-07-13/china-s-top-brokers-ask-senior-bankers-to-fly-coach-to-cut-costs,China’s Top Brokers Ask Bankers to Fly Coach and Share Hotel Rooms,Negative
+2021,Business,86,https://www.bloomberg.com/news/articles/2021-06-24/air-france-klm-bond-issue-lands-amid-rising-risks-to-summer-fun,Air France-KLM Bond Issue Lands Amid Rising Risks to Summer Fun,Positive
+2021,Business,83,https://www.bloomberg.com/news/articles/2021-06-17/air-new-zealand-sees-more-losses-as-virus-keeps-borders-closed,Air New Zealand Sees More Losses as Virus Keeps Borders Closed,Negative
+2021,Business,7,https://www.bloomberg.com/news/articles/2021-07-12/porter-airlines-prepares-for-post-covid-travel-with-embraer-jets,Porter Airlines Elbows Onto Air Canada Turf With Jet Deal,Positive
+2021,Business,75,https://www.bloomberg.com/news/articles/2021-07-04/covid-variant-weighs-on-travel-rebound-airports-ceo-warns,"Covid Variant Weighs on Travel Rebound, Airports CEO Warns",Negative
+2021,Business,76,https://www.bloomberg.com/news/articles/2021-04-14/qantas-expects-all-of-its-airbus-a380-superjumbos-to-fly-again,Qantas Sees Airbus A380 Superjumbo Fleet Returning to Skies,Positive
+2021,Business,48,https://www.bloomberg.com/news/articles/2021-06-18/where-can-you-fly-right-now-europe-can-travel-again-britons-are-stuck-at-home,Where Can You Fly Right Now? Germans Roll Out Their Beach Towels,Positive
+2021,Business,51,https://www.bloomberg.com/news/articles/2021-02-15/dubai-airports-traffic-slumps-70-in-2020-on-covid-19-lockdowns,Dubai Airports Traffic Slumps 70% in 2020 on Covid-19 Lockdowns,Negative
+2021,Business,29,https://www.bloomberg.com/news/articles/2021-05-19/jetblue-sets-august-start-for-long-awaited-london-flights,JetBlue to Make NYC-London Debut in August as Travel Rises,Positive
+2021,Business,23,https://www.bloomberg.com/news/articles/2021-05-12/where-can-you-fly-right-now-brits-rerouted-to-algarve-with-spain-and-greece-off-limits,Where Can You Fly Right Now:  Brits Rerouted to Algarve With Spain and Greece Off Limits,Negative
+2021,Business,16,https://www.bloomberg.com/news/articles/2021-07-12/ryanair-starts-hiring-spree-seeking-2-000-pilots-for-expansion,"Ryanair Set to Hire 2,000 Pilots as Boeing Max Fleet Grows",Positive
+2021,Business,102,https://www.bloomberg.com/news/articles/2021-02-03/air-travel-s-2021-rebound-threatened-by-virus-flares-iata-says,"Air Travel’s 2021 Rebound Threatened by Virus Flares, IATA Says",Negative
+2021,Business,119,https://www.bloomberg.com/news/articles/2021-02-26/personal-touch-lost-by-travel-bans-is-costing-businesses-dearly,Personal Touch Lost By Travel Bans Is Costing Businesses Dearly,Negative
+2021,Business,12,https://www.bloomberg.com/news/articles/2021-05-20/easyjet-readies-for-tumultuous-summer-amid-slow-reopening,EasyJet Readies for Tumultuous Summer Amid Slow Reopening,Negative
+2021,Business,43,https://www.bloomberg.com/news/articles/2021-04-16/once-bullish-wizz-air-ceo-says-his-optimism-for-summer-is-fading,Once-Bullish Wizz Air CEO Says His Optimism for Summer Is Fading,Negative
+2021,Business,64,https://www.bloomberg.com/news/articles/2021-05-19/where-can-you-fly-right-now-u-s-vaccine-drive-gives-airlines-a-boost,Where Can You Fly Right Now? U.S. Vaccine Drive Gives Airlines a Boost,Positive
+2021,Markets,10,https://www.bloomberg.com/news/articles/2021-06-18/philippine-air-s-parent-halted-from-trading-after-audit-report,Philippine Air’s Parent Halted From Trading After Audit Report,Negative
+2021,Markets,47,https://www.bloomberg.com/news/articles/2021-01-21/aircraft-backed-bonds-draw-heavy-demand-as-investors-seek-yield,Aircraft-Lease Bonds Draw High Demand as Investors Seek Yield,Positive
+2021,Markets,41,https://www.bloomberg.com/news/articles/2021-05-20/lufthansa-s-biggest-private-owner-to-sell-half-its-stake,Late German Billionaire’s Heirs Unwind the Patriarch’s Last Deal,Positive
+2021,Markets,32,https://www.bloomberg.com/news/articles/2021-05-20/latam-airlines-shareholders-channel-hertz-in-bankruptcy-rebound,Latam Airlines Shareholders Channel Hertz in Bankruptcy Rebound,Negative
+2021,Markets,18,https://www.bloomberg.com/news/articles/2021-06-30/turns-out-flightless-boeing-max-is-money-spinner-for-major-buyer,The Airline Making Money Off Grounded Boeing 737 Max Jets,Negative
+2021,Markets,28,https://www.bloomberg.com/news/articles/2021-05-17/hong-kong-singapore-delay-anticipated-air-travel-bubble-again,"Hong Kong, Singapore Delay Anticipated Travel Bubble Again",Negative
+2021,Markets,19,https://www.bloomberg.com/news/articles/2021-07-05/airlines-to-be-charged-more-for-polluting-in-eu-green-push,Airlines to Be Charged More for Polluting in EU Green Push,Negative
+2021,Markets,9,https://www.bloomberg.com/news/articles/2021-07-14/billionaire-adani-takes-control-of-mumbai-airport-in-rebound-bet,Billionaire Adani to Control Mumbai Airport in Rebound Bet,Positive
+2021,Markets,12,https://www.bloomberg.com/news/articles/2021-06-05/vaccinated-europeans-book-their-holiday-while-brits-decry-u-turn,Vaccinated Europeans Book Holidays While Brits Decry U-Turn,Negative
+2021,Markets,27,https://www.bloomberg.com/news/articles/2021-05-04/malaysia-airlines-says-travel-demand-to-stay-subdued-until-2023,Malaysia Airlines Says Travel Demand to Stay Weak Until 2023,Negative
+2021,Markets,23,https://www.bloomberg.com/news/articles/2021-07-01/ryanair-ceo-sees-capacity-almost-doubling-on-vaccine-boost,Ryanair CEO Sees Capacity Almost Doubling on Vaccine Boost,Positive
+2021,Markets,46,https://www.bloomberg.com/news/articles/2021-02-23/u-k-domestic-stocks-jump-with-travel-shares-on-reopening-plan,U.K. Domestic Stocks Jump With Travel Shares on Reopening Plan,Positive
+2021,Markets,21,https://www.bloomberg.com/news/articles/2021-03-17/apollo-backed-sun-country-airlines-climbs-after-218-million-ipo,Apollo-Backed Sun Country Ascends With Travel Hopes in Debut,Positive
+2021,Markets,38,https://www.bloomberg.com/news/articles/2021-07-01/day-traders-buy-the-dip-in-cyclical-trade-that-hedge-funds-shun,Day Traders Buy the Dip in Cyclical Trade That Hedge Funds Shun,Negative
+2021,Markets,57,https://www.bloomberg.com/news/articles/2021-06-30/european-shares-steady-set-for-fifth-consecutive-montly-gain,European Shares Decline With Cyclicals Hit by Delta Strain Woes,Negative
+2021,Markets,25,https://www.bloomberg.com/news/articles/2021-03-20/summer-holidays-lost-to-covid-threaten-europe-s-red-hot-stocks,Summer Holidays Lost to Covid Threaten Europe’s Red-Hot Stocks,Negative
+2021,Markets,48,https://www.bloomberg.com/news/articles/2021-07-18/asia-stocks-seen-down-oil-in-focus-on-opec-deal-markets-wrap,Stocks Slump as Virus Jitters Fuel Rush Into Bonds: Markets Wrap,Negative
+2021,Markets,37,https://www.bloomberg.com/news/articles/2021-06-18/lufthansa-says-it-aims-to-repay-german-aid-by-september-election,Lufthansa Says It Aims to Repay German Aid by September Vote,Negative
+2021,Markets,53,https://www.bloomberg.com/news/articles/2021-04-07/states-back-in-the-pilot-seat-after-european-airline-bailouts,Covid Thrusts Governments Into Cockpit With Flag Carrier Aid,Negative
+2021,Markets,30,https://www.bloomberg.com/news/articles/2021-07-08/senior-executives-resign-from-cathay-pacific-amid-covid-battle,Senior Executives Resign From Cathay Amid Covid Battle,Negative
+2021,Markets,55,https://www.bloomberg.com/news/articles/2021-05-31/qatar-air-is-in-a-mystery-spat-with-airbus-will-launch-777x,Qatar Airways Is in a Mystery Spat with Airbus,Negative
+2021,Markets,40,https://www.bloomberg.com/news/articles/2021-07-17/alitalia-successor-is-already-under-attack-by-low-cost-raiders,Alitalia Successor Is Already Under Attack by Low-Cost Raiders,Negative
+2021,Markets,54,https://www.bloomberg.com/news/articles/2021-06-22/jet-airways-closer-to-return-to-skies-as-rescue-plan-approved,Jet Airways Closer to Flying Again as Rescue Plan Approved,Positive
+2021,Markets,24,https://www.bloomberg.com/news/articles/2021-06-03/latam-airlines-absolutely-not-selling-brazil-unit-to-azul,Latam Airlines ‘Absolutely Not’ Selling Brazil Unit to Azul,Negative
+2021,Markets,0,https://www.bloomberg.com/news/articles/2021-06-09/ryanair-wins-eu-court-challenge-to-condor-s-covid-19-aid,Ryanair Wins EU Court Challenge to Condor’s Covid-19 Aid,Positive
+2021,Markets,39,https://www.bloomberg.com/news/articles/2021-06-21/norwegian-air-replaces-ceo-who-was-brought-in-to-save-carrier,Norwegian Air Replaces CEO Who Was Brought In to Save Carrier,Negative
+2021,Markets,4,https://www.bloomberg.com/news/articles/2021-06-07/oil-edges-lower-with-rally-cooling-after-bouncing-off-2018-high,Oil Closes Above $70 a Barrel for First Time in Over Two Years,Positive
+2021,Markets,61,https://www.bloomberg.com/news/articles/2021-02-10/oil-edges-lower-after-posting-longest-run-of-gains-in-two-years,Oil Snaps Eight-Day Rally After Cut in Global Demand Outlook,Positive
+2021,Markets,16,https://www.bloomberg.com/news/articles/2021-06-13/oil-holds-near-71-as-traders-assess-rising-demand-iran-talks,Oil Dips Amid Broader Market Declines and U.K. Virus Rise,Negative
+2021,Markets,33,https://www.bloomberg.com/news/articles/2021-07-03/europe-s-travel-stocks-hit-bumps-as-summer-plans-lose-fizz,Europe’s Travel Stocks Hit Bumps as Summer Plans Lose Fizz,Negative
+2021,Markets,6,https://www.bloomberg.com/news/articles/2021-07-08/eia-weekly-gasoline-supplied-hits-record-10-million-b-d,U.S. Gasoline Demand Soars to Record on July 4 Travel Surge,Positive
+2021,Markets,35,https://www.bloomberg.com/news/articles/2021-06-22/airlines-count-on-zoom-fatigue-to-drive-business-travel-revival,Airlines Count on Zoom Fatigue to Revive Business Travel,Positive
+2021,Markets,58,https://www.bloomberg.com/news/articles/2021-02-09/airport-rental-car-facility-borrows-for-first-time-since-covid,Texas Airport Facility Borrows for First Time Since Covid,Negative
+2021,Markets,43,https://www.bloomberg.com/news/articles/2021-07-16/virgin-galactic-shares-come-back-to-earth-after-space-trip,Virgin Galactic Shares Come Back to Earth After Space Trip,Positive
+2021,Markets,13,https://www.bloomberg.com/news/articles/2021-05-10/indigo-to-raise-409-million-in-strategy-reversal-on-virus-surge,IndiGo to Raise $409 Million in Strategy Reversal on Virus Surge,Negative
+2021,Markets,8,https://www.bloomberg.com/news/articles/2021-02-24/easyjet-s-cost-of-cash-sinks-after-johnson-s-summer-travel-plan,EasyJet’s Cost of Cash Sinks After Johnson’s Summer Travel Plan,Negative
+2021,Markets,14,https://www.bloomberg.com/news/articles/2021-07-14/airlines-and-automakers-brace-for-eu-s-momentous-co2-clampdown,Airlines and Automakers Brace for EU’s Momentous CO2 Clampdown,Positive
+2021,Markets,50,https://www.bloomberg.com/news/articles/2021-03-15/jetblue-southwest-see-leisure-travel-rebound-boosting-demand,Airlines Rally as Bookings Offer Solid Signs of Recovery,Positive
+2021,Markets,7,https://www.bloomberg.com/news/articles/2021-07-09/singapore-upbeat-on-hong-kong-travel-but-don-t-call-it-a-bubble,Sinovac Vaccine Status Won’t Stop Singapore Opening to Travel,Positive
+2021,Markets,60,https://www.bloomberg.com/news/articles/2021-07-20/qatar-air-ready-to-buy-boeing-airbus-freighters-urges-launch,"Qatar Air Ready to Buy Boeing, Airbus Freighters, Urges Launch",Positive
+2021,Markets,2,https://www.bloomberg.com/news/articles/2021-05-31/spicejet-scion-urges-india-to-open-vaccination-to-private-sector,SpiceJet Scion Urges India to Open Vaccination to Private Sector,Positive
+2021,Markets,51,https://www.bloomberg.com/news/articles/2021-03-23/market-timers-in-s-p-500-pay-a-high-price-for-perfect-prescience,Market Timers in S&P 500 Pay a High Price for Perfect Prescience,Positive
+2021,Markets,26,https://www.bloomberg.com/news/articles/2021-05-25/japan-travel-bonds-outperform-after-carriers-bolstered-finances,Japan’s Outperforming Travel Bonds Show Bets Worst Is Behind,Negative
+2021,Markets,17,https://www.bloomberg.com/news/articles/2021-03-08/american-airlines-launches-7-5-billion-frequent-flyer-debt-sale,American Air Borrowing $7.5 Billion in Loyalty-Backed Debt,Negative
+2021,Markets,29,https://www.bloomberg.com/news/articles/2021-02-24/united-air-s-grounded-777s-had-troubled-history-in-debt-markets,United Air’s Grounded 777s Had Troubled History in Debt Markets,Negative
+2021,Markets,22,https://www.bloomberg.com/news/articles/2021-05-20/lufthansa-freezes-hybrid-bond-payment-coupons-to-follow-eu-rules,Lufthansa Freezes Hybrid Bond Payment Coupons to Follow EU Rules,Negative
+2021,Markets,59,https://www.bloomberg.com/news/articles/2021-03-23/frontier-airlines-intends-to-price-ipo-at-19-to-21-a-share,Frontier to Raise Up to $315 Million in Year’s 2nd Airline IPO,Positive
+2021,Markets,3,https://www.bloomberg.com/news/articles/2021-07-15/delta-offers-to-buy-back-up-to-1-billion-of-debt-raised-in-2020,Delta Seeks to Cut Pandemic Debt Burden With Bond Buyback,Negative
+2021,Markets,42,https://www.bloomberg.com/news/articles/2021-04-28/china-s-post-covid-travel-frenzy-may-break-record-this-labor-day,China’s Post-Covid Travel Frenzy May Break Labor Day Record,Positive
+2021,Markets,5,https://www.bloomberg.com/news/articles/2021-05-16/oil-edges-higher-as-demand-optimism-offsets-asia-virus-flare-up,Oil Rises to Two-Year High With Investors Eying Demand Comeback,Positive
+2021,Markets,15,https://www.bloomberg.com/news/articles/2021-05-24/air-cargo-to-climb-into-mid-2022-amid-shipping-delays-dhl-says,"Air Cargo to Climb Into Mid-2022 Amid Shipping Delays, DHL Says",Positive
+2021,Markets,44,https://www.bloomberg.com/news/articles/2021-04-07/boeing-forecasts-india-air-passenger-demand-will-double-by-2030,Boeing Forecasts India’s Air Passenger Demand Will Double by 2030,Positive
+2021,Markets,52,https://www.bloomberg.com/news/articles/2021-03-09/cathay-pacific-to-reveal-full-extent-of-covid-s-hit-to-business,Cathay Pacific Posts $2.8 Billion Loss in Toughest Year Ever,Negative
+2021,Markets,20,https://www.bloomberg.com/news/articles/2021-05-27/fare-bargains-vanish-as-airlines-seize-on-surging-summer-demand,"Americans Stampede Back to Air Travel, Wiping Out Bargain Fares",Negative
+2021,Markets,56,https://www.bloomberg.com/news/articles/2021-04-17/vaccinated-countries-wary-of-relapse-stunt-air-travel-reopening,Vaccinated Countries Wary of Relapse Stunt Air Travel Reopening,Negative
+2021,Markets,36,https://www.bloomberg.com/news/articles/2021-06-02/germany-weighs-taking-part-in-lufthansa-capital-increase,Germany Weighs Taking Part in Lufthansa Capital Increase,Positive
+2021,Markets,49,https://www.bloomberg.com/news/articles/2021-03-24/new-nordic-airline-begins-150-million-placing-in-bet-on-rebound,New Nordic Airline Begins $150 Million Placing in Bet on Rebound,Positive
+2021,Markets,34,https://www.bloomberg.com/news/articles/2021-06-15/lufthansa-sets-fresh-margin-target-as-air-travel-starts-up-again,"Lufthansa Targets Costs, Sets Profit Goal for Travel Restart",Negative
+2021,Markets,31,https://www.bloomberg.com/news/articles/2021-04-14/avianca-to-seek-1-8-billion-with-bankruptcy-exit-in-sight,Avianca to Seek $1.8 Billion With Bankruptcy Exit in Sight,Negative
+2021,Misc,20,https://www.bloomberg.com/news/articles/2021-07-14/faster-nyc-trips-to-d-c-boston-pitched-by-rail-coalition,"NYC Region Rail Boosters Urge Faster Trains, Plead for Funds",Negative
+2021,Misc,7,https://www.bloomberg.com/news/audio/2021-07-16/bloomberg-best-space-tourism-and-investing-in-space-podcast, Bloomberg Best: Space Tourism and Investing in Space (Podcast) ,Positive
+2021,Misc,16,https://www.bloomberg.com/news/audio/2021-06-25/tobin-harshaw-on-airlines-pilot-shortage-podcast, Tobin Harshaw on Airlines’ Pilot Shortage (Podcast) ,Negative
+2021,Misc,14,https://www.bloomberg.com/news/audio/2021-04-15/balance-of-power-airline-industry-pandemic-impact-podcast, Balance of Power: Airline Industry Pandemic Impact (Podcast) ,Positive
+2021,Misc,5,https://www.bloomberg.com/news/audio/2021-07-07/wratten-on-travel-tata-on-rto-taylor-on-football-in-england, Wratten on Travel; Tata on RTO; Taylor on Football in England ,Positive
+2021,Misc,4,https://www.bloomberg.com/news/audio/2021-07-14/surveillance-marriott-sees-travel-rebound-podcast, Surveillance: Marriott Sees Travel Rebound (Podcast) ,Positive
+2021,Misc,8,https://www.bloomberg.com/news/audio/2021-07-04/bloomberg-best-vaccines-ride-shares-space-travel-podcast," Bloomberg Best: Vaccines, Ride Shares, Space Travel (Podcast) ",Positive
+2021,Misc,13,https://www.bloomberg.com/news/features/2021-04-14/where-can-i-fly-in-the-world-2021-u-s-air-travel-trails-china-but-beats-europe,Where Can You Fly Right Now?,Positive
+2021,Misc,12,https://www.bloomberg.com/news/audio/2021-06-04/airline-capacity-approaching-2019-levels-radio, Airline Capacity Approaching 2019 Levels (Radio) ,Positive
+2021,Misc,0,https://www.bloomberg.com/news/features/2021-07-15/mexico-covid-crisis-amlo-government-s-response-ahead-of-delta-variant,How Mexico Forgot Its Covid Crisis,Negative
+2021,Misc,19,https://www.bloomberg.com/news/articles/2021-04-13/carnival-cruise-ccl-ceo-arnold-donald-on-covid-travel-restrictions,Carnival’s CEO Wants a Level Playing Field for Travel and Tourism,Positive
+2021,Misc,9,https://www.bloomberg.com/news/articles/2021-02-26/airbus-bets-on-small-airplanes-to-beat-boeing-ba,Airbus Wants to Seize the Skies From Boeing,Positive
+2021,Misc,15,https://www.bloomberg.com/news/features/2021-03-30/big-oil-s-secret-world-of-trading-fuels-profits-as-climate-change-worries-rise,Big Oil’s Secret World of Trading,Negative
+2021,Misc,17,https://www.bloomberg.com/news/audio/2021-07-12/virgin-galactic-s-key-test-for-space-tourism-radio, Virgin Galactic's Key Test For Space Tourism (Radio) ,Positive
+2021,Misc,18,https://www.bloomberg.com/news/features/2021-04-21/where-can-i-fly-american-united-delta-hope-for-summer-2021-vacation-demand,Where Can You Fly Right Now? U.S. Airlines’ Summer Dreams at Risk,Negative
+2021,Misc,2,https://www.bloomberg.com/news/features/2021-02-12/how-music-venues-got-their-own-covid-relief-plan,How Music Venues Convinced Congress to Save Live Entertainment,Negative
+2021,Misc,10,https://www.bloomberg.com/news/articles/2021-03-25/covid-vaccine-passports-2021-the-golden-ticket-for-international-travel,A Vaccine Passport Is the New Golden Ticket as the World Reopens,Positive
+2021,Misc,21,https://www.bloomberg.com/news/audio/2021-06-08/outlook-for-crypto-and-airlines-radio, Outlook For Crypto And Airlines (Radio) ,Positive
+2021,Misc,11,https://www.bloomberg.com/news/audio/2021-07-08/the-cable-bond-market-ecb-inflation-uk-travel-podcast," The Cable: Bond Market, ECB, Inflation, UK Travel (Podcast) ",Positive
+2021,Misc,1,https://www.bloomberg.com/news/audio/2021-07-06/alexis-leondis-on-why-a-vacation-home-is-overrated-podcast, Alexis Leondis on Why a Vacation Home Is Overrated (Podcast) ,Negative
+2021,Misc,6,https://www.bloomberg.com/news/features/2021-04-23/former-jetblue-ceo-david-neeleman-prepares-to-launch-new-airline-breeze,JetBlue’s Founder Is Preparing to Launch a New Airline in a Global Pandemic,Positive
+2021,Misc,3,https://www.bloomberg.com/news/audio/2021-05-24/ryanair-flight-forced-landing-sparks-outrage-radio, Ryanair Flight Forced Landing Sparks Outrage (Radio) ,Negative
+2021,Business,39,https://www.bloomberg.com/news/articles/2021-06-17/blade-ceo-admits-creating-fake-communications-director-insider,Blade CEO Admits Creating Fake Spokesperson: Insider,Negative
+2021,Business,77,https://www.bloomberg.com/news/articles/2021-06-22/faa-fines-for-unruly-passengers-this-year-surge-past-500-000,"FAA Fines for Unruly Passengers This Year Surge Past $500,000",Positive
+2021,Business,105,https://www.bloomberg.com/news/articles/2021-07-14/delta-pilot-sues-airline-for-1-billion-claiming-stolen-crew-app,Pilot Sues Delta for $1 Billion Claiming the Airline Stole Crew App,Negative
+2021,Business,34,https://www.bloomberg.com/news/articles/2021-05-24/ue-eval-a-sanciones-por-secuestro-de-avi-n-por-bielorrusia,EU Weighs Sanctions Over ‘Hijacking’ of Ryanair Jet by Belarus,Negative
+2021,Business,122,https://www.bloomberg.com/news/articles/2021-05-21/us-airlines-resuming-flights-to-israel-after-cease-fire,U.S. Airlines Resuming Flights to Israel After Cease-Fire,Positive
+2021,Business,17,https://www.bloomberg.com/news/articles/2021-05-25/forced-landing-in-minsk-was-handy-says-passenger-who-stayed,Greek Scientist Stayed in Minsk After Forced Ryanair Landing,Negative
+2021,Business,61,https://www.bloomberg.com/news/articles/2021-02-12/air-canada-more-upbeat-on-government-aid-as-travel-slump-worsens,Air Canada Rises as CEO Takes Upbeat Tone on Government Aid,Positive
+2021,Business,95,https://www.bloomberg.com/news/articles/2021-06-25/southwest-boosts-minimum-wage-to-15-sets-raises-for-7-000-plus,"Southwest Boosts Minimum Wage to $15, Sets Raises for 7,000",Positive
+2021,Business,40,https://www.bloomberg.com/news/articles/2021-06-21/delta-to-hire-more-than-1-000-pilots-as-it-plans-covid-recovery,"Delta to Hire More Than 1,000 Pilots as It Plots Recovery",Positive
+2021,Business,92,https://www.bloomberg.com/news/articles/2021-06-06/fomo-will-drive-return-of-business-travel-airbus-boss-tells-nzz,"FOMO Will Drive Return of Business Travel, Airbus Boss Tells NZZ",Negative
+2021,Business,91,https://www.bloomberg.com/news/articles/2021-04-14/easyjet-hangs-on-to-summer-revival-hopes-as-vaccinations-stutter,"EasyJet, BA Hold to Summer Optimism as Vaccinations Stutter",Negative
+2021,Business,78,https://www.bloomberg.com/news/articles/2021-06-28/singapore-s-budget-airline-sees-quick-recovery-in-leisure-travel,Singapore’s Budget Airline Sees Quick Recovery in Leisure Travel,Positive
+2021,Business,24,https://www.bloomberg.com/news/articles/2021-03-30/aircraft-lessor-aerocentury-files-bankruptcy-amid-travel-decline,Aircraft Lessor AeroCentury Files for Bankruptcy Amid Travel Decline,Negative
+2021,Business,110,https://www.bloomberg.com/news/articles/2021-07-14/u-s-tourism-is-rebounding-from-pandemic-fed-s-beige-book-finds,"U.S. Tourism Is Rebounding From Pandemic, Fed’s Beige Book Finds",Positive
+2021,Business,15,https://www.bloomberg.com/news/articles/2021-03-26/threat-of-another-lost-summer-stirs-airline-cash-flow-fears,Threat of Another Lost Summer Stirs Cash-Crunch Fears For Airlines,Negative
+2021,Business,74,https://www.bloomberg.com/news/articles/2021-05-20/singapore-air-versus-qantas-highlights-major-covid-disparities,"Singapore Air, Qantas’ Diverging Fortunes Show Covid Disparities",Negative
+2021,Business,4,https://www.bloomberg.com/news/articles/2021-06-25/where-can-you-fly-right-now-the-race-is-on-to-save-summer,Where Can You Fly Right Now? The Race Is On to Save Summer,Positive
+2021,Business,56,https://www.bloomberg.com/news/articles/2021-03-07/ge-nears-deal-to-combine-aircraft-leasing-unit-with-aercap-dj,GE Nears Deal With AerCap to Create Behemoth Aircraft Lessor,Positive
+2021,Business,27,https://www.bloomberg.com/news/articles/2021-03-04/lufthansa-sees-delay-in-breaking-even-after-8-1-billion-loss,Lufthansa Sees Delayed Recovery After Record Annual Loss,Negative
+2021,Business,100,https://www.bloomberg.com/news/articles/2021-04-21/airlines-see-2021-losses-ballooning-to-48-billion-amid-setbacks,Airlines See Covid Setbacks Driving Them to $48 Billion Loss,Negative
+2021,Business,68,https://www.bloomberg.com/news/articles/2021-07-14/delta-sees-solidly-profitable-second-half-on-travel-rebound,Delta Sees Second-Half Profit as Business Travel Picks Up,Positive
+2021,Business,123,https://www.bloomberg.com/news/articles/2021-07-05/heathrow-reopens-third-terminal-in-sign-of-air-travel-optimism,"Heathrow Reopens Runway, Terminal in Sign of Travel Optimism",Positive
+2021,Business,111,https://www.bloomberg.com/news/articles/2021-06-03/boeing-to-test-curtain-of-air-to-fight-covid-in-jet-cabins,Boeing to Test ‘Curtain of Air’ to Fight Covid in Jet Cabins,Positive
+2021,Business,41,https://www.bloomberg.com/news/articles/2021-06-25/southwest-flights-are-snarled-by-weather-across-mid-continent,Southwest Flights Are Snarled by Weather Across Mid-Continent,Negative
+2021,Business,25,https://www.bloomberg.com/news/articles/2021-06-10/united-in-talks-to-buy-100-boeing-max-jets-as-u-s-travel-surges,United Airlines in Talks to Buy at Least 100 Boeing Max Jets,Positive
+2021,Business,113,https://www.bloomberg.com/news/articles/2021-05-25/airlines-flying-around-belarus-face-delays-and-higher-fuel-cost,"Airlines Flying Around Belarus Face Delays, Higher Fuel Burn",Negative
+2021,Business,58,https://www.bloomberg.com/news/articles/2021-04-18/u-s-passes-vaccine-milestone-aid-goes-to-ontario-virus-update,Cadila to Boost Capacity; U.S. Travel Advisory: Virus Update,Positive
+2021,Business,52,https://www.bloomberg.com/news/articles/2021-07-07/where-can-you-fly-right-now-covid-zero-rethink-spurs-asian-travel,Where Can You Fly Right Now? Covid Zero Rethink Spurs Asian Travel,Positive
+2021,Business,67,https://www.bloomberg.com/news/articles/2021-04-07/airlines-cling-to-hopes-of-summer-bounce-even-as-bookings-wane,Airlines Cling to Hopes of Summer Bounce Even as Bookings Wane,Negative
+2021,Business,60,https://www.bloomberg.com/news/articles/2021-03-08/airlines-and-travel-groups-urge-u-s-to-develop-virus-passport,Airlines and Travel Groups Urge U.S. to Develop Virus Passport,Positive
+2021,Business,93,https://www.bloomberg.com/news/articles/2021-07-03/biden-in-michigan-delta-clouds-summer-plans-virus-update,N.Y. Positive Rate Rises; Vaccine Holdouts Polled: Virus Update,Positive
+2021,Business,8,https://www.bloomberg.com/news/articles/2021-06-28/argentina-risks-stranding-its-own-citizens-abroad-airlines-warn,"Argentina Risks Stranding Its Own Citizens Abroad, Airlines Warn",Negative
+2021,Business,98,https://www.bloomberg.com/news/articles/2021-06-17/ryanair-manchester-airport-plan-challenge-to-u-k-travel-rules,"Ryanair, Manchester Airport to Challenge U.K. Travel Rules",Positive
+2021,Business,26,https://www.bloomberg.com/news/articles/2021-06-10/airlines-demand-faster-action-to-restore-trans-atlantic-links,Airlines Push for Faster Restart of Trans-Atlantic Travel,Positive
+2021,Business,38,https://www.bloomberg.com/news/articles/2021-05-07/air-canada-pleads-with-trudeau-for-plan-to-relax-travel-rules,Air Canada Pleads With Trudeau for Plan to Ease Travel Rules,Negative
+2021,Business,45,https://www.bloomberg.com/news/articles/2021-07-13/delta-to-pick-up-used-boeing-airbus-aircraft-to-replenish-fleet,"Delta to Pick Up Used Boeing, Airbus Aircraft to Replenish Fleet",Negative
+2021,Business,14,https://www.bloomberg.com/news/articles/2021-06-11/these-are-the-most-punctual-airlines-and-airports-in-the-world,These Are the World’s Most Punctual Airlines and Airports,Positive
+2021,Business,10,https://www.bloomberg.com/news/articles/2021-02-10/etihad-ceo-s-focus-on-smaller-aircraft-puts-fleet-plans-in-limbo,Etihad’s Focus on Smaller Aircraft Puts Fleet Plans in Limbo,Negative
+2021,Business,116,https://www.bloomberg.com/news/articles/2021-05-05/emirates-fits-a380s-with-upscale-coach-class-as-market-mutates,Emirates Fits Upscale Coach Class in A380s as Market Mutates,Positive
+2021,Business,53,https://www.bloomberg.com/news/articles/2021-05-21/jetblue-founder-s-new-airline-debuts-next-week-as-travel-revives,JetBlue Founder’s New Airline to Debut as Travel Revives,Positive
+2021,Business,84,https://www.bloomberg.com/news/articles/2021-02-24/air-cargo-remains-single-bright-spot-for-aviation-in-2021,Air Cargo Remains Single Bright Spot for Aviation in 2021,Positive
+2021,Business,118,https://www.bloomberg.com/news/articles/2021-04-19/united-air-outlines-traffic-needed-for-profit-as-losses-pile-up,United Outlines Traffic Needed for Profit as Losses Pile Up,Negative
+2021,Business,87,https://www.bloomberg.com/news/articles/2021-07-15/asia-s-air-travel-revival-will-take-years-yet-hurting-jet-fuel,Asia’s Air Travel May Take Three Years to Recover From Pandemic,Negative
+2021,Business,44,https://www.bloomberg.com/news/articles/2021-03-08/more-than-1-million-passengers-a-day-flew-on-airlines-last-week,"U.S. Airline Flyers Top 1 Million-a-Day Pace, a Pandemic Rarity",Positive

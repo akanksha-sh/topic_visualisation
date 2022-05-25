@@ -1,0 +1,226 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: #eee !important;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.admin-login-bg { 
+  width: 100%;
+  float: left;
+  background: url('/images/admin-login-bg.jpg') no-repeat left;
+  background-size: cover;
+  height: 100vh;
+}
+#root {
+  height: 100%;
+}
+.login-div-logo {
+  text-align: center
+  ;margin-bottom: 30px;
+}
+.login-div-logo img {
+  width: 60%;
+}
+.nav-logo {
+  text-align: center;
+  padding: 40px 0px 20px 0px;
+}
+.nav-logo img {
+  width: 80%;
+}
+.standard-form {
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+}
+.btn-row {
+  text-align: center;
+}
+.btn-row button {
+  padding: 10px 70px;
+}
+.react-tagsinput {
+  margin-top: 15px;
+  border-radius: 4px;
+  line-height: initial;
+}
+.react-tagsinput-input {
+  font-size: 16px;
+  color: black;
+}
+.react-tagsinput-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #a4a4a4;
+  opacity: 1; /* Firefox */
+}
+.react-tagsinput:hover {
+  cursor: text;
+  border-color: black;
+}
+.react-tagsinput--focused {
+  border: 2px solid #132BA1 !important;
+} 
+
+.react-tagsinput-tag {
+  background-color: #e6e6e6;
+  border: 0px !important;
+  color:  hsl(0,0%,20%) !important;
+}
+
+.react-tagsinput-remove a {
+  color: black !important;
+}
+/* Float four columns side by side */
+/* .column {
+  float: left;
+  width: 33.3333%;
+  padding: 0 10px;
+} */
+
+/* Remove extra left and right margins, due to padding in columns */
+/* .row {margin: 25px 10px !important;} */
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important; /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.pro-sidebar{
+  width: auto;
+  min-width: auto;
+}
+
+.page-content { 
+  background-color: #eee;
+  padding: 100px 0px 30px 25px;
+}
+.svg-inline--fa {
+  font-size: 2.1875rem;
+}
+.logo-input{
+  width: 75px;
+  float: left;
+  cursor: pointer;
+}
+.page-content-users {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  position: relative;
+}
+.page-body {
+  background: #fff;
+}
+.page-heading {
+  margin-top: 10px !important;
+  margin-left: 30px !important;
+  display: inline-block;
+}
+.standard-add-btn {
+  float: right;
+  margin-top: 20px !important;
+  margin-right: 12px !important;
+  /* background-color:#f7b731;
+  border-radius: 20px; */
+  
+}
+
+.css-2b097c-container {
+  margin-top: 15px;
+}
+.css-1pahdxg-control{
+  border-color: #132BA1 !important;  
+}
+
+/* .css-1rhbuit-multiValue{
+  background-color: #cde69c !important;
+  border-radius: 2px !important;
+  border: 1px solid #a5d24a !important;
+  color: #638421 !important;
+} */
+
+.pro-sidebar .pro-menu.shaped .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
+  background-color: transparent;
+}
+
+.profile-img-input {
+  width: 75px;
+  cursor: pointer;
+  margin-right: 15px
+}
+
+.loader{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+
+ @media (max-width: 767px) {
+  .nav-logo {
+    max-width: 50%;
+  }
+}
+
+.btn-primary {
+  border-color: #fff !important;
+}
+
+.tags-filter {
+  padding-right: 26px !important;
+}
+.MuiPaper-elevation8{
+  box-shadow: none !important;
+}
+
+.MuiPopover-paper{
+  border: 1px solid #eeeeee;
+}
+
+.MuiSwitch-colorPrimary.Mui-checked{
+  color: #f7b731 !important;
+}
+.Typography{
+  color:#3b3a3a;
+}
+.PrivateTabIndicator-colorPrimary-40{
+  background-color: revert !important;
+}
+.btn-primary-color{
+  border-radius: 30px;
+  background-color: #f7b731;
+}
+.MuiDrawer-paper{
+  width: 420px !important;
+  max-width: 100%;
+}
