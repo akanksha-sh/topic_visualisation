@@ -26,27 +26,17 @@ circle {
 }
 
 .Vis {
-  width: 75%;
+  width: 70%;
   height: 100%;
-  /* display: flex; */
-  /* align-items: center; */
-
 }
 
 .SideBar {
-  width: 25%;
+  width: 30%;
   display: flex;
   float: right;
-  /* align-items: center; */
 }
 
-/* .pro-sidebar {
-  width: 500px;
-} */
-
 .Main {
-  /* width: 100%;
-  height: 100%; */
   display:flex; 
 
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'react-router-dom';
 import App from './App';
 import './index.css'; // Standard version
 import 'socicon/css/socicon.css';
@@ -13,8 +14,15 @@ import './assets/plugins/font-awesome/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route} from 'react-router-dom';
+import ClusterGraph from './clusterGraph';
+
 
 ReactDOM.render(
-  <App basename={'/'} />,
+  <BrowserRouter>
+  <Route path='/' component={App} exact />
+  <Route path='/clusterData/:category/:year/:cId' component={ClusterGraph} exact />
+  </BrowserRouter>,
+  // <App basename={'/'} />,
   document.getElementById('root')
 );
