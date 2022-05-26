@@ -17,17 +17,14 @@ code {
     monospace;
 }
 
-.admin-login-bg { 
-  width: 100%;
-  float: left;
-  background: url('/images/admin-login-bg.jpg') no-repeat left;
-  background-size: cover;
-  height: 100vh;
-}
-#root {
+/* #root {
   height: 100%;
-}
-.login-div-logo {
+} */
+
+
+
+
+/* .login-div-logo {
   text-align: center
   ;margin-bottom: 30px;
 }
@@ -39,13 +36,13 @@ code {
   padding: 40px 0px 20px 0px;
 }
 .nav-logo img {
-  width: 80%;
-}
-.standard-form {
+  width: 80%; */
+/* } */
+/* .standard-form {
   background: #fff;
   padding: 30px;
-  width: 100%;
-}
+  width: 100%; */
+/* } */
 .btn-row {
   text-align: center;
 }
@@ -61,9 +58,9 @@ code {
   font-size: 16px;
   color: black;
 }
-.react-tagsinput-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.react-tagsinput-input::placeholder {
   color: #a4a4a4;
-  opacity: 1; /* Firefox */
+  opacity: 1; 
 }
 .react-tagsinput:hover {
   cursor: text;
@@ -82,45 +79,23 @@ code {
 .react-tagsinput-remove a {
   color: black !important;
 }
-/* Float four columns side by side */
-/* .column {
-  float: left;
-  width: 33.3333%;
-  padding: 0 10px;
-} */
-
-/* Remove extra left and right margins, due to padding in columns */
-/* .row {margin: 25px 10px !important;} */
-
-/* Clear floats after the columns */
-/* .row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 /* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important; /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-  margin-bottom: 30px;
-}
+
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
-}
+} */
 
-.pro-sidebar{
+/* .pro-sidebar{
   width: auto;
   min-width: auto;
-}
+} */
 
 .page-content { 
   background-color: #eee;
@@ -151,8 +126,6 @@ code {
   float: right;
   margin-top: 20px !important;
   margin-right: 12px !important;
-  /* background-color:#f7b731;
-  border-radius: 20px; */
   
 }
 
@@ -162,13 +135,6 @@ code {
 .css-1pahdxg-control{
   border-color: #132BA1 !important;  
 }
-
-/* .css-1rhbuit-multiValue{
-  background-color: #cde69c !important;
-  border-radius: 2px !important;
-  border: 1px solid #a5d24a !important;
-  color: #638421 !important;
-} */
 
 .pro-sidebar .pro-menu.shaped .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
   background-color: transparent;

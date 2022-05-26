@@ -1,4 +1,13 @@
-
+.App-header {
+  background-color: #1d2026;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
 circle {
     fill: rgb(187, 101, 98);
@@ -7,11 +16,37 @@ circle {
     stroke-width: 1px;
   }
   
-  .leaf circle {
-    fill: #ff0e42;
-    fill-opacity: 1;
-  }
+.leaf circle {
+  fill: #ff0e42;
+  fill-opacity: 1;
+}
 
-  .App {
-      background-color: white;
+.App {
+    background-color: white;
+}
+
+.Vis {
+  width: 75%;
+  height: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+
+}
+
+.SideBar {
+  width: 25%;
+  display: flex;
+  float: right;
+  /* align-items: center; */
+}
+
+/* .pro-sidebar {
+  width: 500px;
+} */
+
+.Main {
+  /* width: 100%;
+  height: 100%; */
+  display:flex; 
+
 }
