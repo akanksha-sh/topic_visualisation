@@ -9,21 +9,18 @@ function ClusterGraph(props) {
   const {category, year, cId} = (props.match.params);
   let relationData = null;
   let article_info = null;
-
+  let topics = null;
   try {
     relationData = require(`./json/${category}-${year}/Cluster-${cId}-rels.json`)
     article_info = require(`./json/${category}-${year}/article_info.json`);
-
-    console.log("data", relationData);
-    console.log("article_info", article_info);
-    console.log("topic keys", Object.keys(relationData))
-
+    topics = require(`./json/${category}-${year}/topics.json`)[cId];
+    
   } catch (e) {
     console.log("No such module");
   }
 
   const [topicId, setTopicId] = useState(0);
-  const [topicData, setTopicData] = useState(null);
+  const [topicRelations, setTopicRelations] = useState(null);
   const [articleId, setArticleId] = useState(null);
 
 
@@ -35,27 +32,31 @@ function ClusterGraph(props) {
 
   useEffect(() => {
     let new_data = relationData[topicId];
-    setTopicData(new_data);
+    setTopicRelations(new_data);
   }, [topicId]);
 
   return (
     <div>
-      <div>
       <section>
-          {article_info && relationData && Object.keys(relationData) && <MyCard topics={Object.keys(relationData)} filter={setTopicId} />}
-          {articleId && <ArticleCard articleId={articleId} />}
+          <header className="App-header">SEMANTIC TRIPLES </header>
+          {article_info && topics && <MyCard topics={topics} filter={setTopicId} />}
         </section>
+        <div>
         <section>
-          {topicData && (
+        {articleId && <ArticleCard articleId={articleId} artcileData={article_info} />}
+        </section>
+        
+        <section className="ForceGraph">
+          {topicRelations && (
             <ForceGraph
-              topicData={topicData}
+              topicData={topicRelations}
               hoverTooltip={hoverTooltip}
               setArticle={setArticleId}
             />
           )}
         </section>
+        </div>
       </div>
-    </div>
   );
 }
 export default withRouter(ClusterGraph);

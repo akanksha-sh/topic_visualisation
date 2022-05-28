@@ -9,7 +9,7 @@ function App(props) {
   const [category, setCategory] = useState("All");
   const [year, setYear] = useState("All");
 
-
+  
   const triplesCallBack = React.useCallback((cId, cat, y) => {
     props.history.push(`/clusterData/${cat}/${y}/${cId}`)
     console.log("triplesCallBack", y, cat, cId);
@@ -17,7 +17,7 @@ function App(props) {
 
   return (
     <div className="App">
-      <header className="App-header">Visualising News</header>
+      <header className="App-header">TOPIC CLUSTERING</header>
       <div className="Main">
         <section className="Vis">
           <D3Component

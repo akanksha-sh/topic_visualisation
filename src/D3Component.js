@@ -55,8 +55,9 @@ class D3Component extends React.Component {
 
   start = () => {
     Promise.all([
-      d3.csv("/combined_topics2.csv"),
-      d3.csv("/articles_combined.csv"),
+      d3.csv("/combined_topics.csv"),
+      d3.csv("/combined_articles.csv"),
+
     ])
       .then(([data2, data3]) => {
         this.setState({
@@ -237,6 +238,9 @@ class D3Component extends React.Component {
         });
         if (details[0] != undefined)
           return (
+            "Topic Name: " +
+            details[0]['Topic Name'] +
+            "\n" +
             "Keywords: " +
             details[0].Keywords +
             "\n" +
@@ -276,13 +280,14 @@ class D3Component extends React.Component {
         if (d.height == 0) return "#114b5f";
         else if (d.height == 1) return "#ddf8e8";
         else if (d.height == 2) return "#f5a65b";
+        else return "#f5b65b"
       })
       .style("fill-opacity", function (d) {
         if (d.height == 0 || d.height == 1 || d.height == 2) return 1;
         else return 0.25;
       })
       .on("click", (d) => {
-        if (d.height == 2)
+        if (d.height == 2) 
           return this.props.triplesCallBack(
             d.data.name,
             d.parent.data.name,

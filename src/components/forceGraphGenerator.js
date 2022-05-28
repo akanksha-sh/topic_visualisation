@@ -22,7 +22,7 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
   // const width = containerRect.width;
   const size = 800;
   const color = () => {
-    return "#9D00A0";
+    return "blue";
   };
 
   const drag = (simulation) => {
@@ -93,13 +93,15 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     .select(container)
     .append("svg")
     .attr("width", size)
-    .attr("height", size)
-    // .attr("view", [-width / 2, -height / 2, width, height]);
-    .call(
-      d3.zoom().on("zoom", function () {
-        svg.attr("transform", d3.event.transform);
-      })
-    );
+    .attr("height", size);
+    // .attr("view", [-width / 2, -height / 2, width, height])
+    // .call(
+    //   d3.zoom().on("zoom", function () {
+    //     svg.attr("transform", d3.event.transform);
+    //   })
+    // );
+
+  
 
   const link = svg
     .append("g")
@@ -127,11 +129,12 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
   const node = svg
     .append("g")
     .attr("stroke", "#000")
+    .attr("fill-opacity", 0.6)
     .attr("stroke-width", 2)
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("r", 15)
+    .attr("r", 25)
     .attr("fill", color)
     .call(drag(simulation));
 

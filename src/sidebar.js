@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 import Accordion from "@material-ui/core/Accordion";
 import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
@@ -13,26 +11,53 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     height: "100%",
-    backgroundColor: "#1c1d1f",
+    // maxHeight: "100%",
+    backgroundColor: "#1d2026",
     color: "white",
     padding: "30px",
+    // overflow: "auto"
   },
-  li_primary: {
-    fontSize: 20,
-    color: "white",
-    width: "70%",
-  },
-  li_secondary: {
-    fontSize: 16,
-    color: "#FFEBCD",
-  },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular,
+  accordian_summary: {
+    maxHeight:50, 
   },
   custom_accordian: {
     flexDirection: "column",
     display: "flex",
+    padding: 10,
+    paddingTop: 0,
+    margin: 5
+  },
+
+  title: {
+    margin: 10,
+    marginBottom: 20,
+    textAlign: "center",
+  },
+
+  accordian: {
+    marginTop: 10,
+    borderRadius: 2
+  },
+
+  subheading: {
+    marginTop: 5,
+    fontWeight: 200
+  },
+
+  body: {
+    fontWeight: 500, 
+    fontSize: 16,
+    lineHeight: 1.2,
+    wordWrap: "break-word"
+  },
+  sentPositive: {
+    color: "green"
+  },
+  sentNeutral: {
+    color: "blue"
+  },
+  sentNegative: {
+    color: "red"
   },
 }));
 
@@ -51,69 +76,61 @@ export default function FolderList({ year, category }) {
     data && (
       <div style={{ width: "100%", height: "100%" }}>
         <List className={classes.root}>
-          <Typography sx={{ mt: 4, mb: 4 }} variant="h4" component="div">
+          <Typography className={classes.title} variant="h5">
             {`${category} ${year}`}
           </Typography>
 
           {Object.keys(data).map((cId) => {
             return (
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
+              <Accordion className={classes.accordian}>
+                <AccordionSummary className={classes.accordian_summary}
+                  expandIcon={<ExpandMoreIcon />} 
                 >
                   <Typography
-                    className={classes.heading}
-                  >{`Cluster ${cId}`}</Typography>
+                    className={classes.subheading}
+                  >{`Topics: Cluster ${cId}`}</Typography>
                 </AccordionSummary>
-                <AccordionDetails className={classes.custom_accordian}>
-                  <h5>
-                    <b>
-                      <center>Topics:</center>
-                    </b>
-                  </h5>
+                <AccordionDetails className={classes.custom_accordian}>      
                   {Object.keys(data[cId]).map((tId) => {
                     const topicData = data[cId][tId];
+                    const topicSent = topicData['Sentiment'];
                     return (
                       <div>
-                        <Accordion>
+                        <Accordion className={classes.accordian}>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
+                           
                           >
-                            {/* <Typography> Topic Name </Typography> */}
-                            <Typography style={{ wordWrap: "break-word" }}>
+                            <Typography className={classes.body}>
                               {`${topicData["Topic Name"]}`}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails
                             className={classes.custom_accordian}
                           >
-                            <Typography> Keywords </Typography>
-                            <Typography style={{ wordWrap: "break-word" }}>
+                            <Typography className={classes.subheading}> Keywords </Typography>
+                            <Typography className={classes.body}>
                               {`${topicData["Keywords"]}`}{" "}
                             </Typography>
-
-                            <Typography> Sentiment </Typography>
-                            <Typography>{topicData["Sentiment"]}</Typography>
-                            <Accordion>
+                            <br/>
+                            <Typography className={classes.subheading}> Sentiment </Typography>
+                            <Typography className={classes[`sent${topicSent}`]} >{`${topicSent}`}</Typography>
+                            <Accordion className={classes.accordian}>
                               <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
-                                aria-controls="panel1a-content"
-                                id="panel1a-header"
+                               
                               >
-                                <Typography className={classes.heading}>
+                                <Typography className={classes.subheading}>
                                   Articles
                                 </Typography>
                               </AccordionSummary>
                               <AccordionDetails className={classes.custom_accordian}>
                                {topicData['Articles'].map((a) => {
                                  const article = article_info[a]
+                                 const artSent = article_info[a]['sentiment']
                                  return <div>
-                                   <Typography> {article['title']}</Typography>
-                                   <Typography> {article['sentiment']}</Typography>
+                                   <Typography className={classes.body}> {article['title']}</Typography>
+                                   <Typography className={classes[`sent${artSent}`]}> {artSent}</Typography>
                                    <p></p>
                                  </div>
                                })}

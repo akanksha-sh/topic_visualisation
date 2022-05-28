@@ -1,0 +1,44 @@
+Year,Category,ClusterId,TopicId,Topic Name,Keywords,Articles,Sentiment
+2021,Markets,0,0,"['airports', 'passengers', 'authorities']","['airport', 'government', 'jet', 'country', 'passenger', 'plan', 'traffic', 'air_travel', 'sign', 'executive']","[9, 12, 19, 27, 28, 15, 35, 14, 30, 56, 44, 60, 37, 45, 40, 62]",Neutral
+2021,Markets,0,1,"['executive', 'company']","['mystery', 'budget_carrier', 'vaccine', 'ceo', 'chief', 'daughter', 'player', 'procure', 'open', 'hospital']","[7, 18, 23, 20, 2, 55]",Neutral
+2021,Markets,0,2,TBD,"['period', 'hotel', 'inbox', 'disruption', 'history', 'impact', 'day', 'resident', 'morning', 'month']","[42, 52]",Neutral
+2021,Markets,1,0,TBD,"['court', 'slot', 'route', 'bankruptcy', 'owner', 'businessman', 'operation', 'debt', 'insolvency', 'interest']","[31, 49, 24, 47, 34, 36, 53, 32, 22, 41, 11, 54]",Neutral
+2021,Markets,1,1,['week'],"['777', 'aid', 'judge', 'decision', 'incident', 'creditor', 'auction', 'claim', 'group', 'entity']","[1, 29, 0]",Negative
+2021,Markets,1,2,"['management', 'deal', 'executive']","['officer', 'balance', 'board', 'rebuild', 'haul', 'reconstruction', 'contract', 'ceo', 'proceeding', 'replace']",[39],Negative
+2021,Markets,2,0,"['prices', 'market', 'shares']","['oil', 'demand', 'stock', 'share', 'proxy', 'gasoline', 'road', 'day', 'pandemic', 'high']","[38, 46, 16, 10, 4, 61, 13, 51, 59, 6, 5, 48]",Neutral
+2021,Markets,2,2,"['launch', 'concept']","['timeline', 'hitch', 'raise', 'rethink', 'ride', 'rocket', 'marketing', 'space', 'moonshot', 'idea']",[43],Positive
+2021,Markets,2,1,"['credit', 'bonds']","['hope', 'sector', 'coronavirus', 'bond', 'debt', 'booking', 'offering', 'sheet', 'balance', 'vacation']","[25, 21, 33, 3, 58, 50, 57]",Negative
+2021,Markets,2,4,"['loans', 'debt', 'credit']","['matter', 'loan', 'sale', 'person', 'bond', 'spread', 'finance', 'firm', 'basis', 'point']","[26, 8, 17]",Negative
+2021,Misc,0,0,"['business', 'companies']","['ceo', 'travel', 'industry', 'recovery', 'health', 'company', 'world', 'business', 'nation', 'plane']","[19, 20, 15, 4, 12, 9, 18]",Neutral
+2021,Misc,0,1,TBD,"['owner', 'music_venue', 'pilot', 'shortage', 'military', 'adviser', 'crisis', 'celebration', 'application', 'challenge']","[14, 16, 2]",Negative
+2021,Misc,0,2,"['launch', 'research', 'technology']","['outlook', 'founder', 'space_travel', 'vaccine', 'space', 'firm', 'analyst', 'specialist', 'host', 'bureaus']","[5, 7, 13, 8, 21]",Positive
+2021,Misc,0,4,TBD,"['death', 'government', 'news', 'conference', 'spot', 'count', 'mortality', 'case', 'analysis', 'estimate']",[0],Negative
+2021,Misc,0,3,"['ships', 'ship', 'coast']","['island', 'outbreak', 'people', 'product', 'curb', 'easing', 'fleet', 'harbor', 'holiday', 'pleasure']",[10],Positive
+2021,Misc,1,0,"['weekend', 'night']","['host', 'vacation', 'home', 'talk', 'correspondent', 'rocket', 'space', 'tech', 'hole', 'mesh']","[1, 3, 17, 6, 11]",Neutral
+2020,Business,0,0,['pilots'],"['pilot', 'aid', 'extension', 'carrier', 'pilot_union', 'recovery', 'pandemic', 'funding', 'cash', 'emirate']","[0, 19, 38, 41, 3, 10, 12]",Negative
+2020,Business,0,1,"['operations', 'officers', 'personnel']","['staff', 'management', 'officer', 'operation', 'letter', 'engagement', 'future', 'team', 'response', 'president']","[33, 35, 31]",Negative
+2020,Business,0,2,TBD,"['matter', 'people', 'discussion', 'ravage', 'person', 'option', 'mull', 'filing', 'restructuring', 'alternative']",[22],Negative
+2020,Business,2,0,"['officials', 'administration', 'inspection']","['testing', 'quarantine', 'vice_president', 'system', 'day', 'departure', 'risk', 'need', 'government', 'place']","[21, 23, 7, 40, 25, 44, 4]",Neutral
+2020,Business,2,1,['official'],"['region', 'news', 'chief', 'adviser', 'plane', 'manufacturer', 'assembly', 'middleeast', 'situation', 'passenger']","[14, 37, 15, 8]",Negative
+2020,Business,4,0,"['market', 'companies']","['investor', 'low', 'trading', 'sukuk', 'restructuring', 'plan', 'offer', 'impact', 'expense', 'industry']","[17, 5, 42, 20, 39]",Neutral
+2020,Business,6,0,"['services', 'customers', 'online']","['customer', 'service', 'travel', 'refund', 'haul', 'discounter', 'specialist', 'country', 'fee', 'change']","[26, 18, 13]",Negative
+2020,Business,6,1,"['week', 'time']","['traffic', 'ceo', 'revenue', 'staff', 'attempt', 'day', 'inbox', 'lowdown', 'open', 'operating']","[24, 30, 34, 9]",Negative
+2020,Business,6,2,['turmoil'],"['crisis', 'opening', 'fallout', 'government', 'insolvency', 'opportunity', 'plane', 'strength', 'reporter', 'bailout']",[2],Positive
+2020,Business,6,3,"['technology', 'testing']","['virus', 'level', 'industry', 'checkpoint', 'cut', 'flyer', 'furlough', 'impact', 'job', 'milestone']",[29],Positive
+2021,Business,0,0,TBD,"['order', 'jet', 'cost', 'add', 'sign', 'haul', 'layout', 'anticipation', 'list', 'aviation']","[29, 109, 76, 75, 53, 40, 59, 78, 16, 7, 51, 116, 10, 104, 45, 48, 24, 110, 14, 56, 84, 36, 71]",Positive
+2021,Business,0,1,"['employees', 'money']","['employee', 'worker', 'pay', 'tarmac', 'cash', 'aid', 'executive', 'bailout', 'cut', 'cancellation']","[61, 15, 95]",Positive
+2021,Business,2,0,TBD,"['travel', 'outbreak', 'country', 'case', 'charge', 'people', 'variant', 'customer', 'officer', 'lockdown']","[0, 8, 98, 67, 49, 58, 60, 46, 89, 35, 54, 96, 52, 99, 70]",Neutral
+2021,Business,2,1,['announcement'],"['poll', 'privatization', 'news', 'progress', 'prize', 'agreement', 'force', 'shot', 'administration', 'action']","[38, 93, 114, 26, 66, 57]",Positive
+2021,Business,2,2,"['areas', 'area', 'country']","['oil', 'sand', 'province', 'wildfire', 'unemployment', 'spot', 'roughneck', 'resurgence', 'worker', 'camp']",[65],Positive
+2021,Business,2,5,"['representatives', 'government', 'meeting']","['talk', 'hospital', 'economy', 'end', 'representative', 'delegation', 'reintegration', 'response', 'finance', 'stage']","[117, 9]",Positive
+2021,Business,2,3,TBD,"['bubble', 'corridor', 'majority', 'hinge', 'press', 'population', 'opening', 'open', 'system', 'delay']",[82],Negative
+2021,Business,3,0,['location'],"['body', 'destination', 'fold', 'curb', 'mission', 'tourist', 'seat', 'hour', 'holiday', 'hop']","[42, 50, 62, 123, 111, 25, 22, 30, 37, 101, 81, 21]",Positive
+2021,Business,3,1,TBD,"['delay', 'storm', 'airspace', 'desire', 'travel', 'system', 'officer', 'landing', 'weather', 'service']","[3, 41, 69, 113]",Negative
+2021,Business,4,0,"['agents', 'office']","['security', 'level', 'progress', 'travlere', 'agent', 'center', 'luggage', 'screener', 'screening', 'recruitment']","[73, 115, 2, 32, 126, 90, 31, 108, 92, 63, 94, 23, 119, 103, 11]",Neutral
+2021,Business,4,1,"['business', 'investment', 'job']","['director', 'memo', 'banker', 'rival', 'cut', 'cost', 'class', 'recovery', 'group', 'route']","[107, 125, 97, 72, 5, 121]",Negative
+2021,Business,4,2,TBD,"['person', 'attendee', 'conference', 'sale', 'officer', 'planning', 'pre', 'half', 'organizer', 'speaker']",[47],Positive
+2021,Business,5,0,['costs'],"['government', 'loss', 'level', 'recovery', 'euro', 'cost', 'cash', 'rebound', 'market', 'border']","[83, 74, 87, 18, 1, 85, 100, 12, 91, 13, 64, 19, 86, 112, 79]",Negative
+2021,Business,5,1,['month'],"['quarter', 'capacity', 'aircraft', 'pandemic', 'industry', 'IndiGo', 'trip', 'statement', 'traveler', 'pace']","[44, 6, 4, 80, 68, 55, 27, 88, 28]",Neutral
+2021,Business,5,3,['way'],"['profitability', 'segment', 'return', 'path', 'milestone', 'recover', 'end', 'evening', 'decline', 'horizon']",[118],Negative
+2021,Business,5,2,['increases'],"['profit', 'outlook', 'restriction', 'optimism', 'spread', 'wage', 'staff', 'strain', 'body', 'compare']","[120, 102, 43, 33]",Neutral
+2021,Business,5,4,"['sector', 'government']","['economy', 'backbone', 'enterprise', 'sme', 'situation', 'proposal', 'load', 'death', 'round', 'chairman']",[106],Negative
