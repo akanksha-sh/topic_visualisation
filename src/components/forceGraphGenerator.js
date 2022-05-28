@@ -6,24 +6,32 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
 
   const links = topicData.map((d) => Object.assign({}, d));
   var nodes_list = []
-  var set = new Set()
-  for (const i of links) {
-    set.add(i.source)
-    set.add(i.target)
-  }
-  set.forEach(function (n) {
-    nodes_list.push({name: n})
-  });
-  const nodes =  nodes_list.map((d) => Object.assign({}, d));
+  const nodeMap = new Map();
 
+  const sentColours = {
+    'Positive': '#035200',
+    'Negative': '#9c0d00',
+    'Neutral': '#003899'
+  }
+
+  links.forEach((object) => {
+    nodeMap.set(object.source, "#eddb3b");
+    nodeMap.set(object.target, sentColours[object.sentiment]);
+  });
+  console.log(nodeMap);
+
+  nodeMap.forEach(function (val, key) {
+    console.log("o", key, val)
+    nodes_list.push({name: key, color: val})
+  });
+
+  const nodes =  nodes_list.map((d) => Object.assign({}, d));
+  console.log(nodes)
 
   // const containerRect = container.getBoundingClientRect();
   // const height = containerRect.height;
   // const width = containerRect.width;
   const size = 800;
-  const color = () => {
-    return "blue";
-  };
 
   const drag = (simulation) => {
     const dragstarted = (d) => {
@@ -69,6 +77,40 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
       .style("top", `${y - 28}px`);
   };
 
+  // function wrap(text, width) {
+  //   text.each(function () {
+  //       var text = d3.select(this),
+  //           words = text.text().split(/s+/).reverse(),
+  //           word,
+  //           line = [],
+  //           lineNumber = 0,
+  //           lineHeight = 1.1, // ems
+  //           x = text.attr("x"),
+  //           y = text.attr("y"),
+  //           dy = 0, //parseFloat(text.attr("dy")),
+  //           tspan = text.text(null)
+  //                       .append("tspan")
+  //                       .attr("x", x)
+  //                       .attr("y", y)
+  //                       .attr("dy", dy + "em");
+  //       while (word = words.pop()) {
+  //           line.push(word);
+  //           tspan.text(line.join(" "));
+  //           if (tspan.node().getComputedTextLength() > width) {
+  //               line.pop();
+  //               tspan.text(line.join(" "));
+  //               line = [word];
+  //               tspan = text.append("tspan")
+  //                           .attr("x", x)
+  //                           .attr("y", y)
+  //                           .attr("dy", ++lineNumber * lineHeight + dy + "em")
+  //                           .text(word);
+  //           }
+  //       }
+  //   });
+  // }
+
+
   const removeTooltip = () => {
     div.transition().duration(200).style("opacity", 0);
   };
@@ -80,11 +122,12 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
       d3
         .forceLink(links)
         .id((d) => d.name)
-        .distance(300)
+        .distance(250)
     )
-    .force("charge", d3.forceManyBody().strength(-300))
-    .force("x", d3.forceX())
-    .force("y", d3.forceY())
+    .force("charge", d3.forceManyBody().strength(-100))
+    .force("x", d3.forceX(size / 2))
+    .force("y", d3.forceY(size / 2))
+    .force('collision', d3.forceCollide(80))
     .force("center", d3.forceCenter(size / 2, size / 2));
 
   d3.selectAll("svg").remove();
@@ -101,8 +144,6 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     //   })
     // );
 
-  
-
   const link = svg
     .append("g")
     .attr("stroke-opacity", 0.6)
@@ -111,7 +152,7 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     .join("line")
     .attr("stroke-width", 2)
     .attr("stroke", (d) => {
-      return "black";
+      return sentColours[d.sentiment];
     });
 
   const linkText = svg
@@ -128,14 +169,14 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
 
   const node = svg
     .append("g")
-    .attr("stroke", "#000")
-    .attr("fill-opacity", 0.6)
-    .attr("stroke-width", 2)
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("r", 25)
-    .attr("fill", color)
+    .attr("r", 35)
+    .attr("fill", (d) => {
+      console.log(d)
+      return d.color
+    })
     .call(drag(simulation));
 
   linkText
@@ -143,6 +184,18 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
       d.stroke = 
       setArticle(d.articleId)
     });
+
+  const label = svg.append("g")
+    .attr("class", styles.label)
+    .selectAll("text")
+    .data(nodes)
+    .enter()
+    .append("text")
+    .attr('fill', "white")
+    .attr('text-anchor', 'middle')
+    .attr('dominant-baseline', 'central')
+    .text(d => {return d.name;})
+    .call(drag(simulation));
 
   node
     .on("mouseover", (d) => {
@@ -154,9 +207,13 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
 
   simulation.on("tick", () => {
     // update node positions
-    node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+    node
+    .attr("cx", (d) => d.x)
+    .attr("cy", (d) => d.y);
     // .call(simulation.drag);
-
+    label
+    .attr("x", d => { return d.x; })
+    .attr("y", d => { return d.y; })
     //update link positions
     link
       .attr("x1", (d) => d.source.x)
