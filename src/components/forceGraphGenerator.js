@@ -9,29 +9,27 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
   const nodeMap = new Map();
 
   const sentColours = {
-    'Positive': '#035200',
-    'Negative': '#9c0d00',
+    'Positive': '#40c945',
+    'Negative': '#f55045',
     'Neutral': '#003899'
   }
 
   links.forEach((object) => {
-    nodeMap.set(object.source, "#eddb3b");
+    nodeMap.set(object.source, "#FFBD69");
     nodeMap.set(object.target, sentColours[object.sentiment]);
   });
-  console.log(nodeMap);
 
   nodeMap.forEach(function (val, key) {
-    console.log("o", key, val)
     nodes_list.push({name: key, color: val})
   });
 
   const nodes =  nodes_list.map((d) => Object.assign({}, d));
-  console.log(nodes)
 
   // const containerRect = container.getBoundingClientRect();
   // const height = containerRect.height;
   // const width = containerRect.width;
-  const size = 800;
+
+  const size = 1000;
 
   const drag = (simulation) => {
     const dragstarted = (d) => {
@@ -76,39 +74,38 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
       .style("left", `${x}px`)
       .style("top", `${y - 28}px`);
   };
-
-  // function wrap(text, width) {
-  //   text.each(function () {
-  //       var text = d3.select(this),
-  //           words = text.text().split(/s+/).reverse(),
-  //           word,
-  //           line = [],
-  //           lineNumber = 0,
-  //           lineHeight = 1.1, // ems
-  //           x = text.attr("x"),
-  //           y = text.attr("y"),
-  //           dy = 0, //parseFloat(text.attr("dy")),
-  //           tspan = text.text(null)
-  //                       .append("tspan")
-  //                       .attr("x", x)
-  //                       .attr("y", y)
-  //                       .attr("dy", dy + "em");
-  //       while (word = words.pop()) {
-  //           line.push(word);
-  //           tspan.text(line.join(" "));
-  //           if (tspan.node().getComputedTextLength() > width) {
-  //               line.pop();
-  //               tspan.text(line.join(" "));
-  //               line = [word];
-  //               tspan = text.append("tspan")
-  //                           .attr("x", x)
-  //                           .attr("y", y)
-  //                           .attr("dy", ++lineNumber * lineHeight + dy + "em")
-  //                           .text(word);
-  //           }
-  //       }
-  //   });
-  // }
+  function wrap(text, width) {
+    text.each(function () {
+        var text = d3.select(this),
+            words = text.text().split(' ').reverse(),
+            word,
+            line = [],
+            lineNumber = 0,
+            lineHeight = 0.5, // ems
+            x = text.attr("x"),
+            y = text.attr("y"),
+            dy = 0,
+            tspan = text.text(null)
+                        .append("tspan")
+                        .attr("dy", dy + "em");
+        while (word = words.pop()) {
+          
+            line.push(word);
+            tspan.text(line.join(" "));
+            if (tspan.node().getComputedTextLength() > width) {
+                line.pop();
+                tspan.text(line.join(" "));
+                line = [word];
+                tspan = text.append("tspan")
+                            .attr("x", x)
+                            .attr("dy", dy + "em")
+                            .text(word);
+                            
+            }
+            dy += 0.4
+        }
+    });
+  }
 
 
   const removeTooltip = () => {
@@ -191,10 +188,14 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     .data(nodes)
     .enter()
     .append("text")
-    .attr('fill', "white")
-    .attr('text-anchor', 'middle')
+    .attr("dy", 0)
+    .style("font-size", "8px")
+    .attr('fill', "black")
+    
     .attr('dominant-baseline', 'central')
     .text(d => {return d.name;})
+    .call(wrap, 40)
+    .attr('text-anchor', 'middle')
     .call(drag(simulation));
 
   node
@@ -228,7 +229,6 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
       .attr("y", (d) => {
         return (d.source.y + d.target.y) / 2;
       });
-
   });
   return {
     destroy: () => {

@@ -277,10 +277,10 @@ class D3Component extends React.Component {
         else return d.r;
       })
       .style("fill", function (d) {
-        if (d.height == 0) return "#114b5f";
-        else if (d.height == 1) return "#ddf8e8";
-        else if (d.height == 2) return "#f5a65b";
-        else return "#f5b65b"
+        if (d.height == 0) return "#8F1D14";
+        else if (d.height == 1) return "#FFD6C2";
+        else if (d.height == 2) return "#1B120F";
+        else return "#F89D13"
       })
       .style("fill-opacity", function (d) {
         if (d.height == 0 || d.height == 1 || d.height == 2) return 1;
