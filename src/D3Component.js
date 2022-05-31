@@ -57,7 +57,6 @@ class D3Component extends React.Component {
     Promise.all([
       d3.csv("/combined_topics.csv"),
       d3.csv("/combined_articles.csv"),
-
     ])
       .then(([data2, data3]) => {
         this.setState({
@@ -107,7 +106,6 @@ class D3Component extends React.Component {
     });
     var groups = ["2020", "2021"];
 
-    var newObj = {};
     var newObj2 = {};
     var newObj3 = {};
     newObj2.name = "data";
@@ -214,6 +212,7 @@ class D3Component extends React.Component {
       .attr("transform", function (d) {
         return "translate(" + d.x + "," + d.y + ")";
       });
+
     node.append("title").text(function (d) {
       var year, category, artID, topId, clusterID;
       if (d.height == 1) {
@@ -239,7 +238,7 @@ class D3Component extends React.Component {
         if (details[0] != undefined)
           return (
             "Topic Name: " +
-            details[0]['Topic Name'] +
+            details[0]["Topic Name"] +
             "\n" +
             "Keywords: " +
             details[0].Keywords +
@@ -272,28 +271,49 @@ class D3Component extends React.Component {
     node
       .append("circle")
       .attr("r", function (d) {
-        if (d.height == 0) return d.r - 5;
-        else if (d.height == 1) return d.r - 2;
+        // if (d.height == 0) return d.r * 0.4;
+        // else if (d.height == 1) return d.r * 0.9;
+        if (d.height == 0) return d.r - 6;
+        else if (d.height == 1) return d.r - 3;
         else return d.r;
       })
       .style("fill", function (d) {
         if (d.height == 0) return "#8F1D14";
         else if (d.height == 1) return "#FFD6C2";
         else if (d.height == 2) return "#1B120F";
-        else return "#F89D13"
+        else return "#F89D13";
       })
       .style("fill-opacity", function (d) {
         if (d.height == 0 || d.height == 1 || d.height == 2) return 1;
         else return 0.25;
       })
       .on("click", (d) => {
-        if (d.height == 2) 
+        if (d.height == 2)
           return this.props.triplesCallBack(
             d.data.name,
             d.parent.data.name,
             d.parent.parent.data.name
           );
       });
+
+    node
+      .append("text")
+      .style("font-size", (d) => {
+        if (d.height == 0) return "12px";
+        else return "0px"
+      })
+      .attr("fill", (d) => {
+        if (d.height == 0) return "white";
+        else if (d.height == 1) return "black";
+        else if (d.height == 2) return "white";
+      })
+      .attr("dominant-baseline", "central")
+      .attr('text-anchor', 'middle')
+      .text((d) => {
+        var cond = selectedYear != "all" && selectedCategory != "all" && (d.height == 0)
+        if (cond) return  `${d.data.name}`;
+      })
+      
   };
 
   render() {

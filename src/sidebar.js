@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import Accordion from "@material-ui/core/Accordion";
@@ -129,7 +129,7 @@ export default function FolderList({ year, category }) {
                                  const article = article_info[a]
                                  const artSent = article_info[a]['sentiment']
                                  return <div>
-                                   <Typography className={classes.body}> {article['title']}</Typography>
+                                   <Typography className={classes.body}> <b>{a}</b> {article['title']}</Typography>
                                    <Typography className={classes[`sent${artSent}`]}> {artSent}</Typography>
                                    <p></p>
                                  </div>
@@ -143,27 +143,6 @@ export default function FolderList({ year, category }) {
                   })}
                 </AccordionDetails>
               </Accordion>
-              // <Fragment>
-              //   <Typography
-              //     sx={{ mt: 4, ml: 4, mb: 4 }}
-              //     variant="h5"
-              //     component="div"
-              //   >{`Cluster ${cId}`}</Typography>
-              //   {Object.keys(data[cId]).map((tId) => {
-              //     return (
-              //       <ListItem key={data[cId][tId]["Keywords"]}>
-              //         <ListItemText
-              //           classes={{
-              //             primary: classes.li_primary,
-              //             secondary: classes.li_secondary,
-              //           }}
-              //           primary={data[cId][tId]["Keywords"]}
-              //           secondary={data[cId][tId]["Sentiment"]}
-              //         />
-              //       </ListItem>
-              //     );
-              //   })}
-              // </Fragment>
             );
           })}
         </List>

@@ -20,17 +20,40 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
   });
 
   nodeMap.forEach(function (val, key) {
-    nodes_list.push({name: key, color: val})
+    nodes_list.push({name: key, color: val, degree:0})
   });
 
   const nodes =  nodes_list.map((d) => Object.assign({}, d));
+
+  // Calculate degree
+  links.forEach(function(d){
+      console.log("d", d.source)
+      const source_node = nodes.find(n=> n.name ===  d.source)
+      const target_node = nodes.find(n=> n.name ===  d.target)
+      source_node.degree += 1
+      target_node.degree += 1
+    });
+
+    // Get min degree and max degree for range
+    var minDeg = d3.min(
+      d3.values(nodes), function(d) {
+        return d.degree; })
+
+    var maxDeg = d3.max(
+      d3.values(nodes), function(d) { 
+        return d.degree; })
+
+    // Create node scale based on degree
+    var scaledNodeSize = d3.scaleSqrt()
+      .domain( [minDeg, maxDeg] )
+      .range( [3, 20] ); 
 
   // const containerRect = container.getBoundingClientRect();
   // const height = containerRect.height;
   // const width = containerRect.width;
 
-  const size = 1000;
-
+  const width = 1200;
+  const height = 1000;
   const drag = (simulation) => {
     const dragstarted = (d) => {
       if (!d3.event.active) simulation.alphaTarget(0.3).restart();
@@ -80,16 +103,12 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
             words = text.text().split(' ').reverse(),
             word,
             line = [],
-            lineNumber = 0,
-            lineHeight = 0.5, // ems
-            x = text.attr("x"),
-            y = text.attr("y"),
             dy = 0,
             tspan = text.text(null)
                         .append("tspan")
                         .attr("dy", dy + "em");
         while (word = words.pop()) {
-          
+            console.log("scscs", tspan.node());
             line.push(word);
             tspan.text(line.join(" "));
             if (tspan.node().getComputedTextLength() > width) {
@@ -97,14 +116,18 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
                 tspan.text(line.join(" "));
                 line = [word];
                 tspan = text.append("tspan")
-                            .attr("x", x)
                             .attr("dy", dy + "em")
                             .text(word);
                             
             }
-            dy += 0.4
+            dy += 0.5
         }
     });
+  }
+
+  function trimText(text, threshold) {
+    if (text.length <= threshold) return text;
+    return text.substr(0, threshold).concat("...");
   }
 
 
@@ -121,19 +144,19 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
         .id((d) => d.name)
         .distance(250)
     )
-    .force("charge", d3.forceManyBody().strength(-100))
-    .force("x", d3.forceX(size / 2))
-    .force("y", d3.forceY(size / 2))
-    .force('collision', d3.forceCollide(80))
-    .force("center", d3.forceCenter(size / 2, size / 2));
+    .force("charge", d3.forceManyBody().strength(-400))
+    .force("x", d3.forceX(width / 2))
+    .force("y", d3.forceY(height / 2))
+    // .force('collision', d3.forceCollide(100))
+    .force("center", d3.forceCenter(1400 / 2, height/2));
 
   d3.selectAll("svg").remove();
 
   const svg = d3
     .select(container)
     .append("svg")
-    .attr("width", size)
-    .attr("height", size);
+    .attr("width", width)
+    .attr("height", height);
     // .attr("view", [-width / 2, -height / 2, width, height])
     // .call(
     //   d3.zoom().on("zoom", function () {
@@ -169,9 +192,8 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     .selectAll("circle")
     .data(nodes)
     .join("circle")
-    .attr("r", 35)
+    .attr("r", (d)=> 30 + scaledNodeSize(d.degree))
     .attr("fill", (d) => {
-      console.log(d)
       return d.color
     })
     .call(drag(simulation));
@@ -189,13 +211,12 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     .enter()
     .append("text")
     .attr("dy", 0)
-    .style("font-size", "8px")
+    .style("font-size", "10px")
     .attr('fill', "black")
-    
-    .attr('dominant-baseline', 'central')
-    .text(d => {return d.name;})
-    .call(wrap, 40)
     .attr('text-anchor', 'middle')
+    .attr('dominant-baseline', 'central')
+    .text(d => {return trimText(d.name, 30);})
+    .call(wrap, 80)
     .call(drag(simulation));
 
   node

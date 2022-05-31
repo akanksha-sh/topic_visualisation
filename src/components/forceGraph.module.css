@@ -14,14 +14,15 @@
 }
 
 .label text{
-  font: 11px sans-serif;
+  font: 10px sans-serif;
   font-weight: 800;
+
 }
 
 div.tooltip {
   position: absolute;
   text-align: center;
-  width: 110px;
+  width: 100px;
   padding: 10px;
   font: 12px sans-serif;
   background: lightsteelblue;
@@ -31,6 +32,5 @@ div.tooltip {
 }
 
 .relation text {
-  font: 11px sans-serif;
-  color: white
+  font: 8px sans-serif;
 }
