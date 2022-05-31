@@ -280,7 +280,7 @@ class D3Component extends React.Component {
       .style("fill", function (d) {
         if (d.height == 0) return "#8F1D14";
         else if (d.height == 1) return "#FFD6C2";
-        else if (d.height == 2) return "#1B120F";
+        else if (d.height == 2) return "#5F9EA0";
         else return "#F89D13";
       })
       .style("fill-opacity", function (d) {
@@ -300,18 +300,28 @@ class D3Component extends React.Component {
       .append("text")
       .style("font-size", (d) => {
         if (d.height == 0) return "12px";
-        else return "0px"
+        else if (d.height == 1) return "10px";
+        else return "12px"
       })
+      .style("font-weight", 700)
       .attr("fill", (d) => {
-        if (d.height == 0) return "white";
-        else if (d.height == 1) return "black";
-        else if (d.height == 2) return "white";
+        if (d.height == 0) return `${d.data.name}`;
+        else if (d.height == 1) return `T${d.data.name}`;
+        else if (d.height == 2) return `C${d.data.name}`;
+       
       })
       .attr("dominant-baseline", "central")
+      .attr("baseline-shift", (d) => {
+        if (d.height == 1) return d.r + 5;
+        else if (d.height == 2) return d.r + 15;
+      })
       .attr('text-anchor', 'middle')
       .text((d) => {
-        var cond = selectedYear != "all" && selectedCategory != "all" && (d.height == 0)
-        if (cond) return  `${d.data.name}`;
+        var cond = selectedYear == "all" || selectedCategory == "all"
+        if (cond) return null ;
+        if (d.height == 0) return `${d.data.name}`;
+        else if (d.height == 1) return `T${d.data.name}`;
+        else if (d.height == 2) return `C${d.data.name}`;
       })
       
   };
