@@ -91,7 +91,7 @@ class D3Component extends React.Component {
       .append("svg")
       .attr("width", size)
       .attr("height", size);
-    var pack = d3.pack().size([size - 4, size - 4]);
+    var pack = d3.pack().size([size - 4, size - 4]).padding(20);
 
     let dataset = d3
       .nest()
@@ -273,9 +273,9 @@ class D3Component extends React.Component {
       .attr("r", function (d) {
         // if (d.height == 0) return d.r * 0.4;
         // else if (d.height == 1) return d.r * 0.9;
-        if (d.height == 0) return d.r - 6;
-        else if (d.height == 1) return d.r - 3;
-        else return d.r;
+        // if (d.height == 0) return d.r - 6;
+        // else if (d.height == 1) return d.r - 3;
+        return d.r;
       })
       .style("fill", function (d) {
         if (d.height == 0) return "#8F1D14";
@@ -299,9 +299,9 @@ class D3Component extends React.Component {
     node
       .append("text")
       .style("font-size", (d) => {
-        if (d.height == 0) return "12px";
+        if (d.height == 0) return "10px";
         else if (d.height == 1) return "10px";
-        else return "12px"
+        else return "14px"
       })
       .style("font-weight", 700)
       .attr("fill", (d) => {
@@ -313,7 +313,7 @@ class D3Component extends React.Component {
       .attr("dominant-baseline", "central")
       .attr("baseline-shift", (d) => {
         if (d.height == 1) return d.r + 5;
-        else if (d.height == 2) return d.r + 15;
+        else if (d.height == 2) return d.r + 9;
       })
       .attr('text-anchor', 'middle')
       .text((d) => {
