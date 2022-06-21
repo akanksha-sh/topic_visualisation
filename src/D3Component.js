@@ -34,6 +34,22 @@ const category = [
     value: "Misc",
     name: "Misc",
   },
+  {
+    value: "Pursuits",
+    name: "Pursuits",
+  },
+  {
+    value: "Politics",
+    name: "Politics",
+  },
+  {
+    value: "Travel",
+    name: "Travel",
+  },
+  {
+    value: "prognosis",
+    name: "Prognosis",
+  },
 ];
 
 const useStyles = (theme) => ({
@@ -305,9 +321,9 @@ class D3Component extends React.Component {
       })
       .style("font-weight", 700)
       .attr("fill", (d) => {
-        if (d.height == 0) return `${d.data.name}`;
-        else if (d.height == 1) return `T${d.data.name}`;
-        else if (d.height == 2) return `C${d.data.name}`;
+        if (d.height == 0) return 'white';
+        else if (d.height == 1) return 'black';
+        else if (d.height == 2) return 'black';
        
       })
       .attr("dominant-baseline", "central")
@@ -323,6 +339,7 @@ class D3Component extends React.Component {
         else if (d.height == 1) return `T${d.data.name}`;
         else if (d.height == 2) return `C${d.data.name}`;
       })
+
       
   };
 

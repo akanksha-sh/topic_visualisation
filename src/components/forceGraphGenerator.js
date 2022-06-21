@@ -2,7 +2,7 @@ import * as d3 from "d3";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import styles from "./forceGraph.module.css";
 
-export function runForceGraph(container, topicData, hoverTooltip, setArticle) {  
+export function runForceGraph(container, topicData, hoverTooltip, setArticle, setTriple) {  
 
   const links = topicData.map((d) => Object.assign({}, d));
   var nodes_list = []
@@ -26,7 +26,7 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
   const nodes =  nodes_list.map((d) => Object.assign({}, d));
 
   // Calculate degree
-  links.forEach(function(d){
+  links.forEach(function(d) {
       console.log("d", d.source)
       const source_node = nodes.find(n=> n.name ===  d.source)
       const target_node = nodes.find(n=> n.name ===  d.target)
@@ -53,7 +53,7 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
   // const width = containerRect.width;
 
   const width = 1200;
-  const height = 1000;
+  const height = 1500;
   const drag = (simulation) => {
     const dragstarted = (d) => {
       if (!d3.event.active) simulation.alphaTarget(0.3).restart();
@@ -68,6 +68,8 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
 
     const dragended = (d) => {
       if (!d3.event.active) simulation.alphaTarget(0);
+      // d.fx = d.x;
+      // d.fy = d.y;
       d.fx = null;
       d.fy = null;
     };
@@ -91,24 +93,25 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
   const div = d3.select("#graph-tooltip");
 
   const addTooltip = (hoverTooltip, d, x, y, type) => {
-    div.transition().duration(200).style("opacity", 0.9);
+    div.transition().duration(100).style("opacity", 0.9);
     div
       .html(hoverTooltip(d, type))
       .style("left", `${x}px`)
       .style("top", `${y - 28}px`);
   };
   function wrap(text, width) {
-    text.each(function () {
+    text.each(function (t) {
+      var x_position = (this.getComputedTextLength()/4)
+
         var text = d3.select(this),
             words = text.text().split(' ').reverse(),
             word,
             line = [],
-            dy = 0,
             tspan = text.text(null)
                         .append("tspan")
-                        .attr("dy", dy + "em");
+                        .attr("dy", 0 + "em")
+                        .attr('fx', (d) => {return d.x + "px"} );
         while (word = words.pop()) {
-            console.log("scscs", tspan.node());
             line.push(word);
             tspan.text(line.join(" "));
             if (tspan.node().getComputedTextLength() > width) {
@@ -116,11 +119,24 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
                 tspan.text(line.join(" "));
                 line = [word];
                 tspan = text.append("tspan")
-                            .attr("dy", dy + "em")
-                            .text(word);
-                            
+                            .attr("dy", 1 + "em")
+                            // .attr("dx", (d) => {if (d.x >= 0) {
+                            //   return d.x-x_position + "px"}
+                            //   else if (d.x < 0) {
+                            //     return d.x+x_position + "px"
+                            //   }
+                            // })
+                            .attr('fx', (d) => {
+                              var val = 0
+                              if (t.x > 0) {
+                                val = d.x - x_position
+                              } 
+                              else {
+                                val = d.x + x_position
+                              }
+                              return val + "px"} )
+                            .text(word)
             }
-            dy += 0.5
         }
     });
   }
@@ -130,9 +146,8 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     return text.substr(0, threshold).concat("...");
   }
 
-
   const removeTooltip = () => {
-    div.transition().duration(200).style("opacity", 0);
+    div.transition().duration(100).style("opacity", 0);
   };
 
   const simulation = d3
@@ -144,11 +159,11 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
         .id((d) => d.name)
         .distance(250)
     )
-    .force("charge", d3.forceManyBody().strength(-400))
-    .force("x", d3.forceX(width / 2))
-    .force("y", d3.forceY(height / 2))
-    // .force('collision', d3.forceCollide(100))
-    .force("center", d3.forceCenter(1400 / 2, height/2));
+    .force("charge", d3.forceManyBody().strength(-100))
+    .force("x", d3.forceX(width / 2).strength(0.05))
+    .force("y", d3.forceY(height / 2).strength(0.05))
+    .force('collision', d3.forceCollide(80))
+    .force("center", d3.forceCenter(1600 / 2, height/2));
 
   d3.selectAll("svg").remove();
 
@@ -182,9 +197,10 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     .data(links)
     .join("text")
     .attr("text-anchor", "middle")
-    .attr("dominant-baseline", "central")
+    .attr("dominant-baseline", "text-before-edge")
+    // .attr('transform', 'rotate(45 -10 10)')
     .text((d) => {
-      return d.relation;
+      return trimText(d.relation, 25);
     });
 
   const node = svg
@@ -196,15 +212,18 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     .attr("fill", (d) => {
       return d.color
     })
+    .attr("dx", 0)
+    .attr("dy", ".35em")
     .call(drag(simulation));
 
   linkText
     .on("click", (d) => {
-      d.stroke = 
       setArticle(d.articleId)
+      setTriple([d.source.name, d.relation, d.target.name, d.sentiment])
     });
 
-  const label = svg.append("g")
+  const label = 
+    svg.append("g")
     .attr("class", styles.label)
     .selectAll("text")
     .data(nodes)
@@ -215,10 +234,10 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     .attr('fill', "black")
     .attr('text-anchor', 'middle')
     .attr('dominant-baseline', 'central')
-    .text(d => {return trimText(d.name, 30);})
-    .call(wrap, 80)
+    .text(d => {return trimText(d.name, 25);})
+    .call(wrap, 65)
     .call(drag(simulation));
-
+  
   node
     .on("mouseover", (d) => {
       addTooltip(hoverTooltip, d, d3.event.pageX, d3.event.pageY, "node");
@@ -228,27 +247,56 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle) {
     });
 
   simulation.on("tick", () => {
-    // update node positions
+    // update link positions
+    link
+    .attr("x1", (d) => d.source.x)
+    .attr("y1", (d) => d.source.y)
+    .attr("x2", (d) => d.target.x)
+    .attr("y2", (d) => d.target.y);
+
+    //update node positions
     node
-    .attr("cx", (d) => d.x)
-    .attr("cy", (d) => d.y);
-    // .call(simulation.drag);
+    .attr("cx", d => { return d.x; })
+    .attr("cy", d => { return d.y; })
+
     label
     .attr("x", d => { return d.x; })
     .attr("y", d => { return d.y; })
-    //update link positions
-    link
-      .attr("x1", (d) => d.source.x)
-      .attr("y1", (d) => d.source.y)
-      .attr("x2", (d) => d.target.x)
-      .attr("y2", (d) => d.target.y);
 
-    linkText
-      .attr("x", (d) => {
-        return (d.source.x + d.target.x) / 2;
-      })
-      .attr("y", (d) => {
-        return (d.source.y + d.target.y) / 2;
+    // linkText
+    //   .attr("x", (d) => {
+    //     return (d.source.x + d.target.x) / 2;
+    //   })
+    //   .attr("y", (d) => {
+    //     return (d.source.y + d.target.y) / 2;
+    //   });
+
+      linkText.attr("transform", (d) => {
+        if (d.source.x > d.target.x) {
+          const angle =
+            (Math.atan2(d.source.y - d.target.y, d.source.x - d.target.x) *
+              180) /
+            Math.PI;
+          return (
+            "translate(" +
+            [(5+ d.source.x + d.target.x) / 2, (5 + d.source.y + d.target.y) / 2] +
+            ")rotate(" +
+            angle +
+            ")"
+          );
+        } else {
+          const angle =
+            (Math.atan2(d.target.y - d.source.y, d.target.x - d.source.x) *
+              180) /
+            Math.PI;
+          return (
+            "translate(" +
+            [(5 + d.target.x + d.source.x) / 2, (5+ d.target.y + d.source.y) / 2] +
+            ")rotate(" +
+            angle +
+            ")"
+          );
+        }
       });
   });
   return {

@@ -26,7 +26,7 @@ function MyCard(props) {
       margin: 10,
     },
     keywords: {
-      fontSize: 14,
+      fontSize: 12,
       fontWeight: 400,
     },
 
@@ -38,6 +38,7 @@ function MyCard(props) {
 
     accordian_summ: {
       maxHeight:40,
+      justifyContent: "center",
     },
 
     topics: {
@@ -47,8 +48,10 @@ function MyCard(props) {
       backgroundColor: "#1d2026",
     },
     title: {
-      width: "100px",
+      width: "100%",
       textAlign: "center",
+      fontSize: 20,
+      fontWeight: "lighter"
     },
     content: {
       marginBottom: 10,
@@ -56,6 +59,9 @@ function MyCard(props) {
     button: {
       padding: 0,
       alignItems: "center",
+      "&:focus": {
+        color: "red"
+      }
     },
     sentPositive: {
       marginTop: 4,
@@ -69,6 +75,10 @@ function MyCard(props) {
       marginTop: 4,
       color: "red",
     },
+    topicName: {
+      fontSize: 13,
+      wordBreak: "break-word",
+    }
   });
   const classes = useStyles();
 
@@ -76,7 +86,8 @@ function MyCard(props) {
     <div>
       <Accordion className={classes.accordian}>
         <AccordionSummary className={classes.accordian_summ} expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.title} variant="h5" >Topics</Typography>
+        
+          <Typography className={classes.title} >Cluster Topics</Typography>
         </AccordionSummary >
         <AccordionDetails className={classes.topics}>
           {topicIds.map((tId) => {
@@ -87,9 +98,12 @@ function MyCard(props) {
                   <CardActions className={classes.button}>
                     <Button
                       key={tId}
+                      className={classes.button}
                       onClick={() => props.filter(tId)}
-                      size="small"
-                    >{`${props.topics[tId]["Topic Name"]}`}</Button>
+                      // size="small"
+                    > <Typography  className={classes.topicName} variant="body2">{`${props.topics[tId]["Topic Name"]}`}</Typography>                    
+                      
+                      </Button>
                   </CardActions>
                   <Typography
                     className={classes.keywords}

@@ -22,6 +22,7 @@ function ClusterGraph(props) {
   const [topicId, setTopicId] = useState(0);
   const [topicRelations, setTopicRelations] = useState(null);
   const [articleId, setArticleId] = useState(null);
+  const [selectedTriple, setTriple]= useState([]);
 
 
   const hoverTooltip = React.useCallback((o, type) => {
@@ -43,7 +44,7 @@ function ClusterGraph(props) {
         </section>
         <div>
         <section>
-        {articleId && <ArticleCard articleId={articleId} artcileData={article_info} />}
+        {articleId && <ArticleCard articleId={articleId} artcileData={article_info} tripleData={selectedTriple} />}
         </section>
         
         <section className="ForceGraph">
@@ -52,6 +53,7 @@ function ClusterGraph(props) {
               topicData={topicRelations}
               hoverTooltip={hoverTooltip}
               setArticle={setArticleId}
+              selectTriple = {setTriple}
             />
           )}
         </section>

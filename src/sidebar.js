@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
   accordian: {
     marginTop: 10,
+    marginBottom: 10,
     borderRadius: 2
   },
 
@@ -102,7 +103,7 @@ export default function FolderList({ year, category }) {
                            
                           >
                             <Typography className={classes.body}>
-                              {`${topicData["Topic Name"]}`}
+                              {`T${tId}: ${topicData["Topic Name"]}`}
                             </Typography>
                           </AccordionSummary>
                           <AccordionDetails
@@ -118,7 +119,7 @@ export default function FolderList({ year, category }) {
                             <Accordion className={classes.accordian}>
                               <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
-                               
+
                               >
                                 <Typography className={classes.subheading}>
                                   Articles
@@ -129,7 +130,7 @@ export default function FolderList({ year, category }) {
                                  const article = article_info[a]
                                  const artSent = article_info[a]['sentiment']
                                  return <div>
-                                   <Typography className={classes.body}> <b>{a}</b> {article['title']}</Typography>
+                                   <Typography className={classes.body} onClick={() => window.open(article.url, '_blank')}> <b>{a}</b> {article['title']}</Typography>
                                    <Typography className={classes[`sent${artSent}`]}> {artSent}</Typography>
                                    <p></p>
                                  </div>
