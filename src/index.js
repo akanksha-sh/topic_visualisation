@@ -15,7 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route} from 'react-router-dom';
-import ClusterGraph from './clusterGraph';
+import ClusterGraph from './components/clusterGraph';
 
 
 ReactDOM.render(

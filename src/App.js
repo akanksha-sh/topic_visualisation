@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import D3Component from "./D3Component";
+import D3Component from "./components/D3Component";
 import "./App.css";
-import Sidebar from "./sidebar";
+import Sidebar from "./components/sidebar";
 import {withRouter} from "react-router-dom"
 
 
@@ -9,7 +9,7 @@ function App(props) {
   const [category, setCategory] = useState("All");
   const [year, setYear] = useState("All");
 
-  React.useEffect(() => {
+  useEffect(() => {
   }, [category, year]);
 
   const triplesCallBack = React.useCallback((cId, cat, y) => {

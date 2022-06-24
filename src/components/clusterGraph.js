@@ -1,9 +1,9 @@
 
 import { withRouter } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import { ForceGraph } from "./components/forceGraph";
-import MyCard from "./components/mycard";
-import ArticleCard from "./components/articleCard";
+import { ForceGraph } from "./forceGraph";
+import MyCard from "./mycard";
+import ArticleCard from "./articleCard";
 
 function ClusterGraph(props) {
   const {category, year, cId} = (props.match.params);
@@ -11,9 +11,9 @@ function ClusterGraph(props) {
   let article_info = null;
   let topics = null;
   try {
-    relationData = require(`./json/${category}-${year}/Cluster-${cId}-rels.json`)
-    article_info = require(`./json/${category}-${year}/article_info.json`);
-    topics = require(`./json/${category}-${year}/topics.json`)[cId];
+    relationData = require(`../json/${category}-${year}/Cluster-${cId}-rels.json`)
+    article_info = require(`../json/${category}-${year}/article_info.json`);
+    topics = require(`../json/${category}-${year}/topics.json`)[cId];
     
   } catch (e) {
     console.log("No such module");

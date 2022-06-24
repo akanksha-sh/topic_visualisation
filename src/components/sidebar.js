@@ -67,8 +67,8 @@ export default function FolderList({ year, category }) {
   let data = null;
   let article_info = null;
   try {
-    data = require(`./json/${category}-${year}/topics.json`);
-    article_info = require(`./json/${category}-${year}/article_info.json`);
+    data = require(`../json/${category}-${year}/topics.json`);
+    article_info = require(`../json/${category}-${year}/article_info.json`);
   } catch (e) {
     console.log("No such module");
   }
