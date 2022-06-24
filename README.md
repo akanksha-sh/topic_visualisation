@@ -1,57 +1,90 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div id="top"></div>
 
-## Available Scripts
+# Visualisation Tool For Semantic Analysis of News
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
+  ## Table of Contents
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>  
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+    </li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+     <li><a href="#license">License</a></li>
+  </ol>
 
-### `npm install`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-To install Nodemodules
-### `npm start`
+This repository presents a visualisation tool for the semantic analysis of news articles performed by the engine in repository: <a href=https://github.com/akanksha-sh/visualisingNews.git> <tt> semantic-analysis-news</tt> </a>.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It uses two primary frameworks: 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* [D3.js](https://d3js.org/) - A JavaScript library for building customisable data visualisations using DOM manipulation.
 
-### `npm run build`
+* [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This tool displays the results in using two primary data visualisations: 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* <tt>Cluster-Topic Diagram</tt> - A circle packing graph that displays the hierarchy of semantic clusters &rarr; topics &rarr; articles. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* <tt>Knowledge Graph </tt> - A force directed graph for displaying the semantic triples for each topic. 
+
+For more information about the semantic analysis results, please refer to this <a id="raw-url" href="https://github.com/akanksha-sh/FYP_report/blob/main/main.pdf">paper</a>.
+ 
 
 
-## Learn More
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Getting Started
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+To use this visualisation tool, clone this repository on your machine. 
 
-### Analyzing the Bundle Size
+```
+git clone https://github.com/akanksha-sh/visualisation-semantic-analysis.git
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Before we run the tool, we need to ensure the analysis results to be visualised are imported to this repo. After running the pipeline from <a href=https://github.com/akanksha-sh/visualisingNews.git> <tt> semantic-analysis-news</tt> </a>, import the files from the <tt> **data/** </tt> folder. 
 
-### Making a Progressive Web App
+Particularly, the <tt>combined_articles.csv</tt> and <tt>combined_topics.csv</tt> in the <tt>public/</tt> folder of this repo and the <tt>json/</tt> folder in <tt>src/</tt> folder of this repo. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+```
+scp -r <path>/semantic-analysis-news/data/combined* <path>/semantic-analysis-news/public/.
 
-### Advanced Configuration
+scp -r <path>/semantic-analysis-news/data/json <path>/semantic-analysis-news/src/.
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Once the results data is stored, we install the dependencies for node modules using npm or yarn (whichever is a preference).
 
-### Deployment
+```
+yarn install
+# or 
+npm install 
+```
+To run the app in the development mode.
+Open http://localhost:3000 to view it in the browser. 
+```
+yarn start
+# or 
+npm run build
+npm start 
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run build` fails to minify
+## Acknowledgements
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). To learn more: [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+Material UI was used for bootstrapping and pre-built components that implement Google's Material Design. To learn more: [Material UI documentation](https://mui.com/material-ui/getting-started/overview/).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+## License
+
+Licensed under the MIT license. 
