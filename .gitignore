@@ -3,3 +3,4 @@ src/json/
 .DS_Store
 yarn.lock
 old_data/
+*.csv
