@@ -86,5 +86,6 @@ Material UI was used for bootstrapping and pre-built components that implement G
 
 
 ## License
+Copyright &#169; 2022 Akanksha Sharma
 
 Licensed under the MIT license. 
