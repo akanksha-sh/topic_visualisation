@@ -34,7 +34,7 @@ function ClusterGraph(props) {
   useEffect(() => {
     let new_data = relationData[topicId];
     setTopicRelations(new_data);
-  }, [topicId]);
+  }, [topicId, relationData]);
 
   return (
     <div>

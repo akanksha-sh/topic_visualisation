@@ -93,7 +93,7 @@ function MyCard(props) {
           {topicIds.map((tId) => {
             const topicSent = props.topics[tId]["Sentiment"];
             return (
-              <Card className={classes.card}>
+              <Card key={tId} className={classes.card}>
                 <CardContent clasname={classes.content}>
                   <CardActions className={classes.button}>
                     <Button

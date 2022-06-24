@@ -263,13 +263,6 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle, se
     .attr("x", d => { return d.x; })
     .attr("y", d => { return d.y; })
 
-    // linkText
-    //   .attr("x", (d) => {
-    //     return (d.source.x + d.target.x) / 2;
-    //   })
-    //   .attr("y", (d) => {
-    //     return (d.source.y + d.target.y) / 2;
-    //   });
 
       linkText.attr("transform", (d) => {
         if (d.source.x > d.target.x) {

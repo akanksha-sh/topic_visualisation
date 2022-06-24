@@ -9,10 +9,11 @@ function App(props) {
   const [category, setCategory] = useState("All");
   const [year, setYear] = useState("All");
 
-  
+  React.useEffect(() => {
+  }, [category, year]);
+
   const triplesCallBack = React.useCallback((cId, cat, y) => {
     props.history.push(`/clusterData/${cat}/${y}/${cId}`)
-    console.log("triplesCallBack", y, cat, cId);
   }, []);
 
   return (

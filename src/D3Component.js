@@ -92,13 +92,14 @@ class D3Component extends React.Component {
     // this.start()
   }
 
+  componentWillUnmount() {
+    this.myRef.current = ''
+  }
+
+
   drawCluster = () => {
     const { topics } = this.state;
     const { classes } = this.props;
-    //TODO: Fix svg sizing
-    // const containerRect = this.myRef.current.getBoundingClientRect();
-    // const height = containerRect.height;
-    // const width = containerRect.width;
 
     let size = 800;
     d3.select("div.App div.MuiBox-root.MuiBox-root-7 div svg").remove();
@@ -132,19 +133,19 @@ class D3Component extends React.Component {
 
       newObj.name = d;
       let d1 = topics.filter(function (a) {
-        return a.Year == d;
+        return a.Year === d;
       });
       newObj.children = [];
 
       subCat.forEach(function (j, k) {
         newObj3 = {};
         var d2 = d1.filter(function (a) {
-          return a["Category"] == j;
+          return a["Category"] === j;
         });
         if (d2.length !== 0) {
           newObj3.name = j;
           d2 = d1.filter(function (a) {
-            return a["Category"] == j;
+            return a["Category"] === j;
           });
           newObj3.children = [];
           var arr = [];
@@ -157,7 +158,7 @@ class D3Component extends React.Component {
           arr.forEach(function (p, q) {
             var obj4 = {};
             var d3 = d2.filter((e) => {
-              return e.ClusterId == p;
+              return e.ClusterId === p;
             });
 
             obj4.name = p;
@@ -191,17 +192,17 @@ class D3Component extends React.Component {
     let art = this.state.articles;
     let top = this.state.topics;
 
-    if (selectedYear != "all") {
+    if (selectedYear !== "all") {
       root2.children = root2.children.filter((d) => {
-        return d.name == selectedYear;
+        return d.name === selectedYear;
       });
     }
-    if (selectedCategory != "all") {
+    if (selectedCategory !== "all") {
       for (let i = 0; i < root2.children.length; i++) {
         root2.children[i].children = root2.children[i].children.filter((d) => {
-          return d.name == selectedCategory;
+          return d.name === selectedCategory;
         });
-        if (root2.children[i].children.length == 0) root2.children.shift();
+        if (root2.children[i].children.length === 0) root2.children.shift();
       }
     }
     if (root2.children.length === 0) {
@@ -231,8 +232,8 @@ class D3Component extends React.Component {
 
     node.append("title").text(function (d) {
       var year, category, artID, topId, clusterID;
-      if (d.height == 1) {
-        if (d.depth == 4) {
+      if (d.height === 1) {
+        if (d.depth === 4) {
           year = d.parent.parent.parent.data.name;
           category = d.parent.parent.data.name;
           clusterID = d.parent.data.name;
@@ -245,13 +246,13 @@ class D3Component extends React.Component {
         }
         let details = top.filter((d) => {
           return (
-            d.Year == year &&
-            d.Category == category &&
-            d.ClusterId == clusterID &&
-            d.TopicId == topId
+            d.Year === year &&
+            d.Category === category &&
+            d.ClusterId === clusterID &&
+            d.TopicId === topId
           );
         });
-        if (details[0] != undefined)
+        if (details[0] !== undefined)
           return (
             "Topic Name: " +
             details[0]["Topic Name"] +
@@ -262,16 +263,16 @@ class D3Component extends React.Component {
             "Sentiment: " +
             details[0].Sentiment
           );
-      } else if (d.height == 0) {
-        if (d.depth == 5) {
+      } else if (d.height === 0) {
+        if (d.depth === 5) {
           year = d.parent.parent.parent.parent.data.name;
           category = d.parent.parent.parent.data.name;
         }
         artID = d.data.name;
         let details = art.filter((d) => {
-          return d.Year == year && d.Category == category && d.id == artID;
+          return d.Year === year && d.Category === category && d.id === artID;
         });
-        if (details[0] != undefined) {
+        if (details[0] !== undefined) {
           return (
             "Title: " +
             details[0].title +
@@ -287,24 +288,20 @@ class D3Component extends React.Component {
     node
       .append("circle")
       .attr("r", function (d) {
-        // if (d.height == 0) return d.r * 0.4;
-        // else if (d.height == 1) return d.r * 0.9;
-        // if (d.height == 0) return d.r - 6;
-        // else if (d.height == 1) return d.r - 3;
         return d.r;
       })
       .style("fill", function (d) {
-        if (d.height == 0) return "#8F1D14";
-        else if (d.height == 1) return "#FFD6C2";
-        else if (d.height == 2) return "#5F9EA0";
+        if (d.height === 0) return "#8F1D14";
+        else if (d.height === 1) return "#FFD6C2";
+        else if (d.height === 2) return "#5F9EA0";
         else return "#F89D13";
       })
       .style("fill-opacity", function (d) {
-        if (d.height == 0 || d.height == 1 || d.height == 2) return 1;
+        if (d.height === 0 || d.height === 1 || d.height === 2) return 1;
         else return 0.25;
       })
       .on("click", (d) => {
-        if (d.height == 2)
+        if (d.height === 2)
           return this.props.triplesCallBack(
             d.data.name,
             d.parent.data.name,
@@ -315,32 +312,30 @@ class D3Component extends React.Component {
     node
       .append("text")
       .style("font-size", (d) => {
-        if (d.height == 0) return "10px";
-        else if (d.height == 1) return "10px";
+        if (d.height === 0) return "10px";
+        else if (d.height === 1) return "10px";
         else return "14px"
       })
       .style("font-weight", 700)
       .attr("fill", (d) => {
-        if (d.height == 0) return 'white';
-        else if (d.height == 1) return 'black';
-        else if (d.height == 2) return 'black';
+        if (d.height === 0) return 'white';
+        else if (d.height === 1) return 'black';
+        else if (d.height === 2) return 'black';
        
       })
       .attr("dominant-baseline", "central")
       .attr("baseline-shift", (d) => {
-        if (d.height == 1) return d.r + 5;
-        else if (d.height == 2) return d.r + 9;
+        if (d.height === 1) return d.r + 5;
+        else if (d.height === 2) return d.r + 9;
       })
       .attr('text-anchor', 'middle')
       .text((d) => {
-        var cond = selectedYear == "all" || selectedCategory == "all"
+        var cond = selectedYear === "all" || selectedCategory === "all"
         if (cond) return null ;
-        if (d.height == 0) return `${d.data.name}`;
-        else if (d.height == 1) return `T${d.data.name}`;
-        else if (d.height == 2) return `C${d.data.name}`;
+        if (d.height === 0) return `${d.data.name}`;
+        else if (d.height === 1) return `T${d.data.name}`;
+        else if (d.height === 2) return `C${d.data.name}`;
       })
-
-      
   };
 
   render() {

@@ -77,13 +77,13 @@ export default function FolderList({ year, category }) {
     data && (
       <div style={{ width: "100%", height: "100%" }}>
         <List className={classes.root}>
-          <Typography className={classes.title} variant="h5">
+          <Typography key={'text'} className={classes.title} variant="h5">
             {`${category} ${year}`}
           </Typography>
 
           {Object.keys(data).map((cId) => {
             return (
-              <Accordion className={classes.accordian}>
+              <Accordion key={cId} className={classes.accordian}>
                 <AccordionSummary className={classes.accordian_summary}
                   expandIcon={<ExpandMoreIcon />} 
                 >
@@ -96,7 +96,7 @@ export default function FolderList({ year, category }) {
                     const topicData = data[cId][tId];
                     const topicSent = topicData['Sentiment'];
                     return (
-                      <div>
+                      <div key={tId}>
                         <Accordion className={classes.accordian}>
                           <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -129,7 +129,7 @@ export default function FolderList({ year, category }) {
                                {topicData['Articles'].map((a) => {
                                  const article = article_info[a]
                                  const artSent = article_info[a]['sentiment']
-                                 return <div>
+                                 return <div key={a}>
                                    <Typography className={classes.body} onClick={() => window.open(article.url, '_blank')}> <b>{a}</b> {article['title']}</Typography>
                                    <Typography className={classes[`sent${artSent}`]}> {artSent}</Typography>
                                    <p></p>
