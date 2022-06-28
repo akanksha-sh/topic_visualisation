@@ -1,6 +1,7 @@
 node_modules
-src/json/
+/src/json/*
+*.csv
 .DS_Store
 yarn.lock
 old_data/
-*.csv
+*.json

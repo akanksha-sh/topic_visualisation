@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Card from "@material-ui/core/Card";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
@@ -8,11 +8,7 @@ import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import Divider from '@material-ui/core/Divider';
 
 function ArticleCard({articleId, artcileData, tripleData}) {
-    console.log("artcile id", articleId)
     const article = artcileData[articleId]
-    console.log("artcileData", artcileData)
-    console.log("articleId", articleId)
-    console.log("article", article)
 
     const useStyles = makeStyles({
         card: {
@@ -45,6 +41,7 @@ function ArticleCard({articleId, artcileData, tripleData}) {
         }
       });
       const classes = useStyles();
+
     return (
             <Card className={classes.card}>
               <CardContent className={classes.content}>

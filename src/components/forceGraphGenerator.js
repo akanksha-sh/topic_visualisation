@@ -24,7 +24,6 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle, se
   });
 
   const nodes =  nodes_list.map((d) => Object.assign({}, d));
-
   // Calculate degree
   links.forEach(function(d) {
       console.log("d", d.source)
@@ -52,8 +51,9 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle, se
   // const height = containerRect.height;
   // const width = containerRect.width;
 
-  const width = 1200;
-  const height = 1500;
+  const width = window.innerWidth;
+  const height = 2*window.innerHeight;
+
   const drag = (simulation) => {
     const dragstarted = (d) => {
       if (!d3.event.active) simulation.alphaTarget(0.3).restart();
@@ -152,6 +152,7 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle, se
 
   const simulation = d3
     .forceSimulation(nodes)
+    .force("center", d3.forceCenter(width / 2, height / 2))
     .force(
       "link",
       d3
@@ -159,11 +160,23 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle, se
         .id((d) => d.name)
         .distance(250)
     )
-    .force("charge", d3.forceManyBody().strength(-100))
-    .force("x", d3.forceX(width / 2).strength(0.05))
-    .force("y", d3.forceY(height / 2).strength(0.05))
-    .force('collision', d3.forceCollide(80))
-    .force("center", d3.forceCenter(1600 / 2, height/2));
+    .force("charge", d3.forceManyBody().strength((n) => {
+      if (n.color != "#FFBD69") {
+        return -120
+      }
+      return -100
+    }))
+    .force("x", d3.forceX(width / 2).strength(0.02))
+    .force("y", d3.forceY(height / 2).strength(0.02))
+
+    .force('collision', d3.forceCollide((n) => {
+      console.log(n)
+      if (n.color != "#FFBD69") {
+        return 80
+      }
+      return 70
+    }));
+
 
   d3.selectAll("svg").remove();
 
@@ -172,12 +185,6 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle, se
     .append("svg")
     .attr("width", width)
     .attr("height", height);
-    // .attr("view", [-width / 2, -height / 2, width, height])
-    // .call(
-    //   d3.zoom().on("zoom", function () {
-    //     svg.attr("transform", d3.event.transform);
-    //   })
-    // );
 
   const link = svg
     .append("g")
@@ -198,7 +205,6 @@ export function runForceGraph(container, topicData, hoverTooltip, setArticle, se
     .join("text")
     .attr("text-anchor", "middle")
     .attr("dominant-baseline", "text-before-edge")
-    // .attr('transform', 'rotate(45 -10 10)')
     .text((d) => {
       return trimText(d.relation, 25);
     });
